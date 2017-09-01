@@ -226,8 +226,9 @@ small {
       border-bottom-color: $va-color-white;
     }
 
-    &.va-c-btn--spec {
-      border-bottom-color: $va-color-brand-green;
+    &.va-l-site-link__register {
+    	border-top: .5rem solid;
+			border-top-color: red;
     }
   }
 }

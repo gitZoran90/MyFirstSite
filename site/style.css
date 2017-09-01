@@ -176,7 +176,8 @@ small {
     .va-l-site-nav a.active, .va-l-site-nav a:active, .va-l-site-nav a:focus, .va-l-site-nav a:hover {
       background-color: #0385b6;
       border-bottom-color: #ffffff; }
-    .va-l-site-nav a.va-c-btn--spec {
-      border-bottom-color: #59c986; }
+    .va-l-site-nav a.va-l-site-link__register {
+      border-top: .5rem solid;
+      border-top-color: red; }
 
 /*# sourceMappingURL=style.css.map */
