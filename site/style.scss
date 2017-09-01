@@ -1,0 +1,233 @@
+
+@import "academy-typography";
+
+$va-color-brand-blue: #0278a4;
+$va-color-brand-orange: #f9b417;
+$va-color-brand-green: #59c986;
+$va-color-brand-red: #D8000C;
+$va-color-brand-black: #000000;
+$va-color-primary: $va-color-brand-blue;
+$va-color-success: $va-color-brand-green;
+$va-color-warning: $va-color-brand-orange;
+$va-color-error: $va-color-brand-red;
+$va-color-primary-light: lighten($va-color-primary, 10%);
+$va-color-success-light: lighten($va-color-success, 10%);
+$va-color-warning-light: lighten($va-color-warning, 10%);
+$va-color-error-light: lighten($va-color-error, 10%);
+$va-color-primary-dark: darken($va-color-primary, 10%);
+$va-color-success-dark: darken($va-color-success, 10%);
+$va-color-warning-dark: darken($va-color-warning, 10%);
+$va-color-error-dark: darken($va-color-error, 10%);
+$va-color-base: #333333;
+$va-color-gray: #c9c9c9;
+$va-color-white: #ffffff;
+$va-color-base-light: lighten($va-color-base, 20%);
+$va-color-gray-light: lighten($va-color-gray, 20%);
+$va-color-base-dark: darken($va-color-base, 20%);
+$va-color-gray-dark: darken($va-color-gray, 20%);
+$va-color-black-light: lighten($va-color-brand-black, 30%);
+$va-gutter: 1rem;
+$va-gutter-sm: $va-gutter*0.8;
+$va-gutter-md: $va-gutter*2;
+$va-gutter-lg: $va-gutter*3;
+$va-gutter-xl: $va-gutter*6;
+$va-screen-md: 1024px;
+$va-screen-sm: 768px;
+$va-screen-xs: 480px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  background-color: $va-color-white;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+section {
+  &:not(:first-child) {
+    margin-top: $va-gutter;
+  }
+}
+
+ol,
+ul {
+  list-style-position: inside;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+a {
+  color: $va-color-primary;
+  transition: all .25s ease-in-out;
+  text-decoration: none;
+  &:hover {
+    color: darken($va-color-primary, 20%);
+  }
+}
+
+button {
+  user-select: none;
+}
+
+
+/*
+ * =Typography
+ */
+
+html {
+  font-size: 14px;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  color: $va-color-base;
+  font-family: 'roboto-regular-latin', sans-serif;
+  line-height: 1.4;
+  background-color: $va-color-white;
+}
+
+strong {
+  font-family: 'roboto-medium', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'playfair-display-black', serif;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 6rem;
+
+  @media (max-width: $va-screen-sm) {
+    font-size: 3.5rem;
+  }
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+p,
+ul {
+  font-size: 1.1rem;
+}
+
+small {
+  color: $va-color-gray;
+}
+
+.va-l-site-header {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  height: 5rem;
+  box-shadow: 0 0 .5rem 0 $va-color-base;
+  background-color: $va-color-primary;
+  
+  @media (max-width: $va-screen-xs) {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+}
+
+.va-l-site-logo {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: $va-color-white;
+  &:hover {
+    color: $va-color-white;
+  }
+}
+
+.va-l-site-logo__sign,
+.va-l-site-logo__title {
+  fill: currentColor;
+}
+
+.va-l-site-logo__sign {
+  height: 3rem;
+  margin-right: $va-gutter;
+}
+
+.va-l-site-logo__title {
+  height: 2rem;
+}
+
+.va-l-site-nav {
+  display: flex;
+  align-items: stretch;
+  font-family: 'roboto-medium', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media (max-width: $va-screen-xs) {
+    width: 100%;
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem 1rem 1rem;
+    color: $va-color-white;
+    border-bottom: .5rem solid transparent;
+
+    @media (max-width: $va-screen-xs) {
+      flex-grow: 1;
+    }
+    
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      background-color: #0385b6;
+      border-bottom-color: $va-color-white;
+    }
+
+    &.va-c-btn--spec {
+      border-bottom-color: $va-color-brand-green;
+    }
+  }
+}
