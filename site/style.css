@@ -210,7 +210,7 @@ small {
   min-height: 0;
   height: calc(100vh - 5rem);
   padding-bottom: 13rem;
-  background: #f3f3f3 url("../../images/hero.jpg") no-repeat center center;
+  background: #f3f3f3 url("./images/hero.jpg") no-repeat center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
