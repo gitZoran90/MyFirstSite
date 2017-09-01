@@ -194,6 +194,17 @@ small {
 .va-l-site-logo__title {
   height: 2rem;
 }
+.va-l-site-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem auto 0 auto;
+  @media (max-width: $va-screen-md) {
+    flex-direction: column;
+  }
+  @media (max-width: $va-screen-xs) {
+    margin-top: 9rem;
+  }
+}
 
 .va-l-site-nav {
   display: flex;

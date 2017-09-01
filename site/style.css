@@ -154,6 +154,17 @@ small {
 .va-l-site-logo__title {
   height: 2rem; }
 
+.va-l-site-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5rem auto 0 auto; }
+  @media (max-width: 1024px) {
+    .va-l-site-content {
+      flex-direction: column; } }
+  @media (max-width: 480px) {
+    .va-l-site-content {
+      margin-top: 9rem; } }
+
 .va-l-site-nav {
   display: flex;
   align-items: stretch;
