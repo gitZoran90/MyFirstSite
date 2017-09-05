@@ -1,0 +1,65 @@
+ 	margin: 0:   - ovo je jasno 
+
+        padding: 0;   - ovo je jasno
+
+        box-sizing: border-box;   -ovaj atribut se tiče definisanja dimenzija. U pitanju su ustanovljene i utvrđene dimenzije koje se sprovode iako u class-i pišu druge dimenzije. (testirao sam ovo)
+
+        position: relative;   - nam govori da je pozicija sadrzaja promjenljiva (moguće je div pomjerati: gore, dole, desno, lijevo).
+
+        min-height: 100vh;    - minimalna visina 100vh (ili px).
+
+        background-color: $va-color-white;   - definisanje boje pozadine
+ 
+        max-width: 100%; - maksimalna širina 100%
+
+        margin-top: margin-top: $va-gutter;  - opis gornje margine
+
+        list-style-position: inside;   - atribut govori da lista koja prikazuje sadržaj stoji unutar svojih okvira
+
+        button {cursor: pointer;}  - nam pokazuje da kada pređemo kursorom preko ovog button-a da se kursor automatski pretvara u ruku
+
+        color:     - ovo je jasno
+
+        transition: all .25s ease-in-out;   - spora tranzicija od početka do kraja
+
+        text-decoration: none;   - dekoracija teksta (nema je)
+
+        user-select: none;  - ovo nam govori da se ne može izvršiti selekcija ili markiranje mišem određeni tekst
+
+        font-size: 14px;   - veličina fonta
+
+        webkit-font-smoothing: antialiased;  - čini lakšim za čitanje tekst na tamnim površinama
+
+	font-family  - ovo je jasno
+
+        line-height: 1.4;  - pokazuje veličinu razmaka između linija kucanja
+
+	display: flex;   - nam govori da je pozicija sadržaja na displeju fleksibilna ali da je raspoređena sa lijevo na desno
+
+        justify-content: space-between;  - sadržaj je tako postavljen da između sebe ima prostora duž cijele linije
+
+	z-index  - on omogućava da npr. slika prekrije dio nekog drugog sadržaja. Napomena: z-index samo radi pod sledećim uslovima (position:absolute, position:relative, or position:fixed).
+
+	box-shadow  - formiranje sjenke sadržaja
+
+	flex-direction: column;  - sortiranje sadržaja vertikalno
+
+	align-items: center;  - nam pokazuje da je sadržaj po vertikalnom osnovu postavljen u centar
+
+	text-transform: uppercase;  - sve velika slova
+
+	border-bottom  - linija ispod
+
+	flex-wrap: wrap;  - formiranje horizontalnog praznog prostora između sadržaja
+
+	padding-bottom;   - opisivanje donje granice
+
+	
+  
+
+ 
+
+      
+
+
+  
