@@ -371,3 +371,146 @@ small {
   width: 4rem;
   height: 4rem;
 }
+
+.va-c-section--va-intro {
+  .va-c-btn--wide {
+    margin: 0;
+  }
+}
+
+.va-u-flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.va-c-btn--warning {
+  color: $va-color-white;
+  background-color: $va-color-warning;
+  border-color: $va-color-warning;
+  &:hover,
+  &:focus,
+  &:active,
+  &.va-is-active {
+    color: $va-color-white;
+    background-color: $va-color-warning-light;
+    border-color: $va-color-warning-light;
+  }
+}
+
+.va-c-btn--rounded {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 8rem;
+  height: 8rem;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.va-c-logo-rounded {
+  flex-direction: column;
+}
+
+.va-u-no-action {
+  pointer-events: none;
+}
+
+.va-c-btn--primary {
+  color: $va-color-white;
+  background-color: $va-color-primary;
+  border-color: $va-color-primary;
+  &:hover,
+  &:focus,
+  &:active,
+  &.va-is-active {
+    color: $va-color-white;
+    background-color: $va-color-primary-light;
+    border-color: $va-color-primary-light;
+  }
+}
+
+.va-c-btn--icon {
+  display: inline-flex;
+  align-items: stretch;
+  padding: 0;
+  border-width: .2rem;
+
+  &.va-c-btn--default {
+    border-color: $va-color-gray;
+  
+    &:hover {
+      color: $va-color-base;
+      background-color: $va-color-gray-light;
+      border-color: $va-color-gray;
+    }
+  }
+
+  &.va-c-btn--primary {
+    color: $va-color-primary;
+    border-color: $va-color-primary;
+    background-color: transparent;
+    &:hover {
+      color: $va-color-white;
+      background-color: $va-color-primary-light;
+      border-color: $va-color-primary;
+    }
+    .va-c-icon--wrap {
+      border-left-color: $va-color-primary;
+    }
+    &.va-c-btn--attached {
+      background-color: $va-color-success-light;
+      > span {
+        font-size: inherit;
+        > p {
+          white-space: nowrap;
+          overflow: hidden !important;
+          text-overflow: ellipsis;
+        }
+      }
+    }
+  }
+  > span {
+    p {
+      font-size: inherit;
+      white-space: nowrap;
+    }
+    justify-content: center;
+    align-items: center;
+    padding: $va-gutter;
+    &:not(.va-c-icon--wrap) {
+      flex-grow: 1;
+    }
+  }
+  .va-c-icon--wrap {
+    border-left: .2rem solid $va-color-gray;
+  }
+}
+
+.va-c-btn--wide {
+  display: block;
+  max-width: 17rem;
+  margin-right: auto;
+  margin-left: auto;
+  &.va-c-btn--icon {
+    display: flex;
+  }
+}
+
+.va-c-section--va-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .va-c-section__title {
+    max-width: 25rem;
+  }
+}
+
+.va-u-bg-primary {
+  background-color: $va-color-primary;
+}
+
+.va-u-text-white {
+  color: $va-color-white;
+}
+
