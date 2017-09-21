@@ -127,7 +127,7 @@ h1 {
 }
 
 h2 {
-  font-size: 6rem;
+  font-size: 4rem;
 
   @media (max-width: $va-screen-sm) {
     font-size: 3.5rem;
@@ -285,6 +285,7 @@ small {
     font-size: 6rem;
     color: $va-color-white;
     text-shadow: 1px 1px $va-color-base;
+    position: top;
 
     @media (max-width: $va-screen-sm) {
       font-size: 2.5rem;
@@ -498,9 +499,10 @@ small {
 }
 
 .va-c-section--va-title {
+  align-items: initial;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-wrap: wrap;
+  align-content:space-around;
   .va-c-section__title {
     max-width: 25rem;
   }
@@ -514,3 +516,43 @@ small {
   color: $va-color-white;
 }
 
+.va-c-section__picture {
+  padding: 10px;
+  width: 450px;
+  height: 270px;
+  border-radius: 15%;
+}
+
+.text {
+  color: white;
+  font-size: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.container {
+  position: relative;
+  width: 450px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 270px;
+  width: 450px;
+  opacity: 0;
+  padding: 10px;
+  transition: .5s ease;
+  background-color: #0278a4;
+  border-radius: 15%;
+}
