@@ -280,18 +280,6 @@ small {
     padding: 6rem 3rem 10rem 3rem;
   }
 
-  .va-c-section__title {
-    max-width: 45rem;
-    font-size: 6rem;
-    color: $va-color-white;
-    text-shadow: 1px 1px $va-color-base;
-    position: top;
-
-    @media (max-width: $va-screen-sm) {
-      font-size: 2.5rem;
-    }
-  }
-
   .va-c-section__subtitle {
     max-width: 45rem;
     font-size: 1.5rem;
@@ -499,10 +487,9 @@ small {
 }
 
 .va-c-section--va-title {
-  align-items: initial;
   display: flex;
-  flex-wrap: wrap;
-  align-content:space-around;
+  justify-content: center;
+  align-items: center;
   .va-c-section__title {
     max-width: 25rem;
   }
@@ -523,36 +510,198 @@ small {
   border-radius: 15%;
 }
 
-.text {
-  color: white;
-  font-size: 25px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.va-c-section-course-application {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  .va-c-form-group {
+    @media (max-width: $va-screen-sm) {
+      flex-direction: column;
+    }
+  }
+  .va-c-btn {
+    &:not(:first-child) {
+      @media (max-width: $va-screen-sm) {
+        margin-top: $va-gutter;
+      }
+    }
+  }
 }
 
-.container:hover .overlay {
-  opacity: 1;
-}
-
-.container {
-  position: relative;
-  width: 450px;
-}
 
 .overlay {
+  background: #e9e9e9;
+  display: none;
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  height: 270px;
-  width: 450px;
-  opacity: 0;
-  padding: 10px;
-  transition: .5s ease;
-  background-color: #0278a4;
-  border-radius: 15%;
+  opacity: 0.5;
 }
+
+#registration-success {
+  display: none;
+}
+
+.loader-wrap {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.va-c-section__title {
+  max-width: 45rem;
+  font-size: 6rem;
+  color: $va-color-white;
+  text-shadow: 1px 1px $va-color-base;
+  @media (max-width: $va-screen-sm) {
+    font-size: 2.5rem;
+    }
+  }
+
+
+  .va-c-form-group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  > textarea {
+    color: $va-color-base;
+    font-family: 'roboto-regular-latin', sans-serif;
+    line-height: 1.4;
+  }
+  > select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 3em) 0em;
+    background-size: 2px 4em;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .icon-wrap {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    svg {
+      display: inline-block;
+      fill: $va-color-gray-dark;
+    }
+    pointer-events: none;
+  }
+}
+
+.va-c-form-control {
+  width: 100%;
+  padding: 1.2rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: .2rem solid $va-color-gray;
+
+  &.form-control-error {
+    border: .2rem solid $va-color-error;
+  }
+}
+
+.va-c-form-status {
+  width: 100%;
+  padding: 0;
+  height: 1.2rem;
+  font-size: 0.8rem;
+  color: $va-color-error;
+  background-color: transparent;
+}
+
+.va-c-form-group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  > textarea {
+    color: $va-color-base;
+    font-family: 'roboto-regular-latin', sans-serif;
+    line-height: 1.4;
+  }
+  > select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 3em) 0em;
+    background-size: 2px 4em;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .icon-wrap {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    svg {
+      display: inline-block;
+      fill: $va-color-gray-dark;
+    }
+    pointer-events: none;
+  }
+}
+
+.va-c-form-control {
+  width: 100%;
+  padding: 1.2rem 1rem;
+  font-size: 1rem;
+  background-color: transparent;
+  border: .2rem solid $va-color-gray;
+
+  &.form-control-error {
+    border: .2rem solid $va-color-error;
+  }
+}
+
+.va-c-form-status {
+  width: 100%;
+  padding: 0;
+  height: 1.2rem;
+  font-size: 0.8rem;
+  color: $va-color-error;
+  background-color: transparent;
+}
+
+.va-c-form-group {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  > textarea {
+    color: $va-color-base;
+    font-family: 'roboto-regular-latin', sans-serif;
+    line-height: 1.4;
+  }
+  > select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 0px;
+    background-image: linear-gradient(to right, #ccc, #ccc);
+    background-position: calc(100% - 3em) 0em;
+    background-size: 2px 4em;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+  .icon-wrap {
+    position: absolute;
+    right: 16px;
+    top: 16px;
+    svg {
+      display: inline-block;
+      fill: $va-color-gray-dark;
+    }
+    pointer-events: none;
+  }
+}
+
+
+

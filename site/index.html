@@ -174,13 +174,61 @@
 
             <section class="va-c-section va-c-section--va-title va-u-bg-primary va-u-flex-center">
                 <h2 class="va-c-section__title va-u-text-white">Postani Web Programer</h2>
-                    <div class="container">
-                    <img src="http://jobs-safari.com/wp-content/uploads/2017/04/Sr.-Website-Development-Engineer-Jobs-in-Nashik.jpg" class="va-c-section__picture">
-                        <div class="overlay">
-                            <div class="text">Zajedno do uspeha</div>
+            </section>
+
+
+            <section class="va-c-section va-c-section--application-info va-u-flex-center" id="application-info">
+                <div>
+                    <p>
+                        Prijavi se za besplatno testiranje. Na testiranju ćemo saznati više o tebi, tvojim sklonostima ka programiranju i trenutnom znanju. Obavestićemo te koji je kurs odgovarajući za tebe i koji su slobodni termini početka kursa. Ti odlučuješ da li želiš da pohađaš kurs i kada.
+                    </p>
+                    <p>
+                        OK je ako nemaš nikakvog iskustva u programiranju. Kroz testiranje dolazimo do informacije o tvom talentu za ovu oblast, a zajednički zadatak je da taj talenat ispunimo.
+                    </p>
+                    <p>
+                        Testiranje se održava u prostorijama Vivify Ideas i traje oko 1 sat.
+                    </p>
+                </div>
+            </section>
+            <section id="register" class="va-c-section va-c-section-course-application" id="course-application">
+                <div id="registration">
+                    <div class="overlay">
+                        <div class="loader-wrap">
+                            <div id="loader"></div>
                         </div>
                     </div>
-            </section>
+                    <h4 class="va-c-section__title">Prijavi se za besplatno testiranje</h4>
+                    <p>Na testiranju ćemo saznati više o tebi i tvojim sklonostima ka programiranju. Nakon toga ćemo te obavestiti koji je kurs odgovarajući za tebe.</p>
+                    <br>
+                    <form id="register-form" role="form" action="{{ route('academy-register') }} " method="post" enctype="multipart/form-data" autocomplete="off">
+                        <div class="va-c-form-group">
+                            <input id="fm-name" type="text" name="name" class="va-c-form-control" placeholder="Ime i prezime *">
+                        </div>
+                        <div id="err-name" class="va-c-form-status">
+                        </div>
+                        <div class="va-c-form-group">
+                            <input id="fm-email" type="text" name="email" class="va-c-form-control" placeholder="Email adresa *">
+                        </div>
+                        <div id="err-email" class="va-c-form-status">
+                        </div>
+                        <div class="va-c-form-group">
+                          <button type="submit" class="va-c-btn va-c-btn--primary va-c-btn--ghost va-c-btn--icon va-c-btn--icon-right">
+                            <span>
+                                <p> Pošalji prijavu </p>
+                            </span>
+                            <span class="va-c-icon--wrap">
+                                <svg class="va-c-icon">
+                                    <use xmlns="http://www.w3.org/2000/svg" viewBox="0 0 7.76 14"></use>
+                                       <polygon points="0.76 14 0 13.24 6.24 7 0 0.76 0.76 0 7.76 7 0.76 14"/>
+                                </svg>
+                            </span>
+                          </button>
+                        </div>
+                    </form>
+                </div>
+            </section>            
         </div>
     </body>
 </html>
+
+
