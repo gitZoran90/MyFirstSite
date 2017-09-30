@@ -545,4 +545,79 @@ small {
       display: inline-block;
       fill: #969696; }
 
+.va-c-course {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (max-width: 480px) {
+    .va-c-course > div {
+      margin-top: 1rem; } }
+
+.va-c-course__header {
+  text-align: center;
+  min-height: 22rem; }
+
+.va-c-btn--success {
+  color: #ffffff;
+  background-color: #59c986;
+  border-color: #59c986; }
+  .va-c-btn--success:hover, .va-c-btn--success:focus, .va-c-btn--success:active, .va-c-btn--success.va-is-active {
+    color: #ffffff;
+    background-color: #7fd6a2;
+    border-color: #7fd6a2; }
+
+.va-c-icon--xl {
+  width: 5rem;
+  height: 5rem; }
+
+@media (min-width: 768px) {
+  .va-c-course__body {
+    max-width: 75%; } }
+
+.va-c-ul {
+  list-style: none;
+  font-size: 1rem; }
+  .va-c-ul li {
+    position: relative;
+    margin: 0 0 1rem 2rem; }
+    .va-c-ul li:before {
+      position: absolute;
+      top: .15rem;
+      left: -2rem;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      background-color: #c9c9c9;
+      border-radius: 50%;
+      content: ''; }
+
+.va-c-ul--success li:before {
+  background-color: #59c986; }
+
+.va-c-course__footer {
+  display: flex;
+  justify-content: space-between; }
+  @media (max-width: 480px) {
+    .va-c-course__footer {
+      flex-direction: column; } }
+  .va-c-course__footer .va-c-btn:not(:first-child) {
+    margin-left: 1rem; }
+    @media (max-width: 480px) {
+      .va-c-course__footer .va-c-btn:not(:first-child) {
+        margin-top: 1rem;
+        margin-left: 0; } }
+  .va-c-course__footer .va-c-btn--wide {
+    display: inline-flex;
+    width: 15rem; }
+
+.va-c-btn--default {
+  color: #666666; }
+  .va-c-btn--default:hover, .va-c-btn--default:focus, .va-c-btn--default:active, .va-c-btn--default.va-is-active {
+    color: #1a1a1a;
+    background-color: #fcfcfc;
+    border-color: #fcfcfc; }
+
+.va-c-ul--warning li:before {
+  background-color: #f9b417; }
+
 /*# sourceMappingURL=style.css.map */
