@@ -46,7 +46,7 @@ html {
 }
 
 body {
-  background-color: $va-color-white;
+  background-color: $va-color-brand-red;
 }
 
 img {
@@ -153,7 +153,7 @@ small {
 
 .va-l-site-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   position: fixed;
   top: 0;
   right: 0;
@@ -251,7 +251,7 @@ small {
   width: 50%;
   min-height: 100vh;
   padding: $va-gutter-xl;
-  background-color: $va-color-white;
+  background-color:$va-color-white;
 
   &.va-c-section {
     margin-top: 0;
