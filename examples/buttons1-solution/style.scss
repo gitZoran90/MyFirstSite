@@ -5,6 +5,9 @@ $sl-color-darkgrey: #474747;
 $sl-color-white: #ffffff;
 $sl-color-green: #83D24B;
 $sl-color-lightgrey: #ADADAD;
+$sl-color-silver: #F0F4F6;
+$sl-color-lightgrey: #ADADAD;
+$sl-color-lightergrey:   #F6F6F6;
 
 $sl-radius: 1rem;
 $sl-radius-lg: $sl-radius*2;
@@ -78,4 +81,9 @@ $sl-radius-lg: $sl-radius*2;
 
 .sl-c-btn--ghost {
     background-color: transparent;
+}
+
+.sl-c-btn--default {
+    background-color: $sl-color-silver;
+    border-color: $sl-color-lightergrey;
 }

@@ -39,4 +39,8 @@
 .sl-c-btn--ghost {
   background-color: transparent; }
 
+.sl-c-btn--default {
+  background-color: #F0F4F6;
+  border-color: #F6F6F6; }
+
 /*# sourceMappingURL=style.css.map */
