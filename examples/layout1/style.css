@@ -1,0 +1,18 @@
+.heading--position {
+  text-align: center;
+  font-size: 25px; }
+
+.paragraph--standard {
+  text-align: center;
+  margin: 1cm 6cm; }
+
+.paragraph--position--left {
+  padding: 45px;
+  font-size: 15px;
+  text-align: left; }
+
+.table--position--bottom {
+  border-collapse: collapse;
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
