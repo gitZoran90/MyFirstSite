@@ -7,12 +7,15 @@
   margin: 1cm 6cm; }
 
 .paragraph--position--left {
+  position: relative;
+  display: inline-block;
   padding: 45px;
   font-size: 15px;
-  text-align: left; }
+  text-align: left;
+  left: 30px;
+  bottom: 37px; }
 
-.table--position--bottom {
-  border-collapse: collapse;
-  width: 100%; }
+textarea--position--right {
+  display: inline-block; }
 
 /*# sourceMappingURL=style.css.map */
