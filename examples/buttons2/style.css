@@ -1,0 +1,22 @@
+.button {
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 10px 65px;
+  text-decoration: none;
+  vertical-align: middle; }
+
+.button--white {
+  background-color: white;
+  border: 1px solid #35d035; }
+
+.button--green {
+  background-color: #35d035;
+  border: 1px solid #35d035;
+  color: white; }
+
+.button--silver {
+  background-color: #e7d4d4;
+  border: 1px solid #e7d4d4;
+  color: black; }
+
+/*# sourceMappingURL=style.css.map */

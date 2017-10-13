@@ -1,0 +1,21 @@
+.button {
+    border-radius: 20px;
+	font-size: 12px;
+	padding: 10px 65px;; 
+    text-decoration: none;
+    vertical-align: middle;
+}
+.button--white {
+	background-color: white;
+	border: 1px solid #35d035;
+}
+.button--green {
+	background-color: #35d035;
+	border: 1px solid #35d035;
+	color: white;
+}
+.button--silver {
+	background-color: rgb(231, 212, 212);
+	border: 1px solid rgb(231, 212, 212);
+	color: black;
+}
