@@ -1,22 +1,26 @@
 .button {
-  border-radius: 20px;
-  font-size: 12px;
-  padding: 10px 65px;
+  display: inline-block;
+  border: none;
+  padding: 16px;
   text-decoration: none;
-  vertical-align: middle; }
+  border-radius: 3px;
+  font-size: 12; }
 
 .button--white {
-  background-color: white;
-  border: 1px solid #35d035; }
+  background-color: #faf5f5;
+  border: 1px solid #eee6e6;
+  padding: 8px 10px; }
 
 .button--green {
-  background-color: #35d035;
-  border: 1px solid #35d035;
-  color: white; }
+  background-color: #1ca81c;
+  border: 1px solid #1ca81c;
+  color: white;
+  padding: 8px 10px; }
 
 .button--silver {
-  background-color: #e7d4d4;
-  border: 1px solid #e7d4d4;
-  color: black; }
+  background-color: #f5eded;
+  border: 1px solid #f5ecec;
+  padding: 8px 10px;
+  color: #970404; }
 
 /*# sourceMappingURL=style.css.map */

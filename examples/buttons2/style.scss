@@ -1,21 +1,23 @@
 .button {
-    border-radius: 20px;
-	font-size: 12px;
-	padding: 10px 65px;; 
-    text-decoration: none;
-    vertical-align: middle;
+	display: inline-block;
+	text-decoration: none; 
+    border-radius: 3px;
+	font-size: 12;
 }
 .button--white {
-	background-color: white;
-	border: 1px solid #35d035;
+	background-color: rgb(250, 245, 245);
+	border: 1px solid rgb(238, 230, 230);
+	padding: 8px 10px;
 }
 .button--green {
-	background-color: #35d035;
-	border: 1px solid #35d035;
+	background-color: #1ca81c;
+	border: 1px solid #1ca81c;
 	color: white;
+	padding: 8px 10px;
 }
 .button--silver {
-	background-color: rgb(231, 212, 212);
-	border: 1px solid rgb(231, 212, 212);
-	color: black;
+	background-color: rgb(245, 237, 237);
+	border: 1px solid rgb(245, 236, 236); 
+	padding: 8px 10px;
+	color: rgb(151, 4, 4); 
 }
