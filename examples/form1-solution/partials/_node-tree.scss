@@ -1,0 +1,133 @@
+/**
+ * @name Node tree
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-node-tree {
+    position: relative;
+    list-style: none;
+
+    ul {
+        position: relative;
+        margin-left: $sl-gutter-xl;
+        list-style: none;
+    }
+
+    li {
+        position: relative;
+        z-index: 2;
+
+        &.sl-has-children {
+            &:after {
+                position: absolute;
+                top: 0;
+                left: $sl-gutter-md;
+                bottom: 3.5rem;
+                z-index: 1;
+                border-left: 1px dashed $sl-color-grey;
+                content: '';
+            }
+        }
+    }
+}
+
+.sl-c-node-tree--wrap {
+    margin-bottom: $sl-gutter-md;
+
+    &:hover {
+        .sl-c-node-tree__actions {
+            .sl-c-btn-group {
+                display: inline-flex;
+            }
+        }
+    }
+}
+
+.sl-c-node-tree__item {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    padding: $sl-gutter;
+    max-width: 15rem;
+    word-break: break-word;
+    background-color: $sl-color-silver;
+    border: 1px solid $sl-color-lightgrey;
+    border-radius: $sl-radius-xs;
+
+    &.sl-c-node-tree--dept {
+        background-color: $sl-color-lightblue;
+    }
+
+    &.sl-c-node-tree--pos {
+        background-color: $sl-color-silver;
+    }
+
+    .sl-c-icon {
+        flex: 0 0 auto;
+        margin-right: $sl-gutter;
+    }
+}
+
+.sl-c-node-tree__actions {
+    position: absolute;
+    top: 2.8rem;
+    left: .6rem;
+    transform: none;
+    z-index: 20;
+    vertical-align: middle;
+
+    .sl-c-btn--xs {
+        padding: $sl-gutter-xs $sl-gutter-sm;
+    }
+
+    .sl-c-btn--link {
+        color: $sl-color-green;
+
+        .sl-c-icon {
+            background-color: $sl-color-white;
+        }
+    }
+
+    .sl-c-btn-group {
+        display: none;
+    }
+}
+
+.sl-c-node-tree--vertical {
+    display: flex;
+    flex-direction: column;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: $sl-gutter-md;
+        bottom: 3.5rem;
+        z-index: 1;
+        border-left: 1px dashed $sl-color-grey;
+        content: '';
+    }
+}
+
+.sl-c-node-tree--horizontal {
+    display: flex;
+    align-items: flex-start;
+
+    > li {
+        display: inline-block;
+
+        &:not(:first-child) {
+            margin-left: $sl-gutter-lg;
+        }
+
+        &:before {
+            position: absolute;
+            top: 1.75rem;
+            left: -2.3rem;
+            width: 3rem;
+            z-index: 1;
+            border-bottom: 1px dashed $sl-color-grey;
+            content: '';
+        }
+    }
+}

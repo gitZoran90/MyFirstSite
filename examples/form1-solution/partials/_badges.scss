@@ -1,0 +1,17 @@
+/**
+ * @name Badges
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 $sl-gutter-sm;
+    border-radius: $sl-radius-round;
+    border: 1px solid transparent;
+}
+
+.sl-c-badge--circled {
+    border-color: $sl-color-darkgrey;
+}

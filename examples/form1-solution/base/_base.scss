@@ -1,0 +1,50 @@
+/**
+ * @name HTML reset
+ * @author Zoran Zlokapa
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    color: $sl-color-darkgrey;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    &:not(:first-child) {
+        margin-top: $sl-gutter-lg;
+    }
+
+    + p {
+        margin-top: $sl-gutter-md;
+    }
+}
+
+p {
+    &:not(:first-child) {
+        margin-top: $sl-gutter;
+    }
+}
+
+a {
+    color: $sl-color-blue;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+img {
+    max-width: 100%;
+}

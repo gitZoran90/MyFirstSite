@@ -1,0 +1,120 @@
+/**
+ * @name Helper and Utility classes
+ * @author Zoran Zlokapa
+ */
+
+.sl-u-container {
+    max-width: 80vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.sl-u-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sl-u-gap-top {
+    margin-top: $sl-gutter;
+}
+
+.sl-u-gap-top--lg {
+    margin-top: $sl-gutter-lg;
+}
+
+.sl-u-gap-top--xl {
+    margin-top: $sl-gutter-xl;
+}
+
+.sl-u-gap-top--0 {
+    margin-top: 0;
+}
+
+.sl-u-gap-right {
+    margin-right: $sl-gutter;
+}
+
+.sl-u-gap-right--sm {
+    margin-right: $sl-gutter-sm;
+}
+
+.sl-u-gap-bottom {
+    margin-bottom: $sl-gutter;
+}
+
+.sl-u-gap-bottom--lg {
+    margin-bottom: $sl-gutter-lg;
+}
+
+.sl-u-gap-bottom--xl {
+    margin-bottom: $sl-gutter-xl;
+}
+
+.sl-u-gap-bottom--0 {
+    margin-bottom: 0;
+}
+
+.sl-u-gap-left {
+    margin-left: $sl-gutter;
+}
+
+.sl-u-text--center {
+    text-align: center;
+}
+
+.sl-u-text--left {
+    text-align: left;
+}
+
+.sl-u-text--right {
+    text-align: right;
+}
+
+.sl-u-text--uppercase {
+    text-transform: uppercase;
+}
+
+.sl-u-text--success {
+    color: $sl-color-green;
+}
+
+.sl-u-text--info {
+    color: $sl-color-blue;
+}
+
+.sl-u-text--warning,
+.sl-u-text--error {
+    color: $sl-color-red;
+}
+
+.sl-u-rotate--90 {
+    transform: rotate(90deg);
+}
+
+.sl-u-rotate--180 {
+    transform: rotate(180deg);
+}
+
+.sl-u-rotate--270 {
+    transform: rotate(270deg);
+}
+
+.sl-u-text--ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.sl-u-img-circle {
+    border-radius: $sl-radius-round;
+}
+
+.sl-is-hidden {
+    display: none;
+}
+
+.sl-u-no-pointer-events {
+    cursor: none;
+    pointer-events: none;
+}

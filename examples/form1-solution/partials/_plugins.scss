@@ -1,0 +1,55 @@
+/**
+ * @name Plugins modifications
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-form-control {
+    &.v-select {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: center;
+        padding: 0;
+
+        .dropdown-toggle {
+            flex-grow: 1;
+            display: flex;
+            align-items: stretch;
+            padding-left: $sl-gutter-xs;
+            border: none;
+
+            .form-control {
+                height: auto;
+                min-width: 0;
+            }
+        }
+
+        .dropdown-menu {
+            padding: 0;
+            border: none;
+            border-radius: 0;
+        }
+
+        .selected-tag {
+            margin-top: 7px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .highlight {
+            > a {
+                color: $sl-color-darkgrey;
+                background-color: $sl-color-silver;
+            }
+        }
+
+        li {
+            padding: 0;
+
+            > a {
+                padding: $sl-gutter-sm;
+            }
+        }
+    }
+}

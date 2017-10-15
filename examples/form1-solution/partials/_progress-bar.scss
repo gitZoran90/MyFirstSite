@@ -1,0 +1,29 @@
+/**
+ * @name Progress bar
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-progress {
+    position: relative;
+    display: block;
+    height: 1rem;
+    overflow: hidden;
+    border: 1px solid $sl-color-silver;
+    border-radius: $sl-radius;
+}
+
+.sl-c-progress__bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin: 2px;
+    border-radius: $sl-radius;
+    transition: width .2s ease-in-out;
+}
+
+.sl-c-progress--success {
+    .sl-c-progress__bar {
+        background-color: $sl-color-green;
+    }
+}
