@@ -3,39 +3,38 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Probno</title>
-    <link rel="stylesheet" href="style.scss">
+    <title>Barcelona - demo site</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-<div class="wrapper-web-page">
-    <div class="wrapper">
-        <header class="wrapper-header-content">
-            <div class="header-wrapper-image">
-                <img src="yPCXe9KK.jpg" width="55" height="55">
-                <span>BARCELONA<br>SEPTEMBER 4-8 2017</span>  
-            </div>
-            <div class="button-position">  
-                <button id="button">BUY TICKETS</button>    
-            </div>
-        </header>
-    </div>
+    <header class="site-header rounded">
+        <div class="site-header--logo">
+            <img src="yPCXe9KK.jpg"
+                width="55" height="55">
+            <span>
+                Barcelona<br>September 4-8 2017
+            </span>  
+        </div>
+        <div class="site-header--options">  
+            <button class="styled-button">Buy tickets</button>    
+        </div>
+    </header>
 
-    <div class="navbar-position">
-        <nav class="navbar">
-            <ul class="sm-screen">
-                <li>
-                    <button class="button-all">All</button>
-                </li>
-                <li>
-                    <button class="button-frontend">Frontend</button>
-                </li>
-                <li>
-                    <button class="button-backend">Backend</button>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <nav class="site-navigation rounded">
+        <a href="#all" title="All">
+            All
+        </a> 
+        <span> | </span>        
+        <a href="#front" title="Frontend">
+            Frontend
+        </a>
+        <span> | </span>
+        <a href="#back" title="Backend">
+            Backend 
+        </a>
+    </nav>
+
     <section class="section-content">
         <div class="section-div-wrapper">
             <div class="first-text-position">
@@ -85,7 +84,6 @@
             </div>
         </div>
     </section>
-</div>    
 </body>
 
 </html>
