@@ -1,0 +1,6 @@
+$bs-color-brand-blue: rgb(57, 12, 131);
+$bs-color-brand-yellow: #FFCF52;
+$bs-color-brand-red: #C0140A; 
+$bs-color-brand-yellow-light: lighten($bs-color-brand-yellow, 20%);
+$bs-color-brand-yellow-dark: darken($bs-color-brand-yellow, 30%);
+$bs-color-brand-blue-dark: darken($bs-color-brand-blue, 15%);
