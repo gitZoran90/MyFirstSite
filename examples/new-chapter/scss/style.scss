@@ -10,6 +10,7 @@ body {
     font-family: 'hkgrotesk-regular', sans-serif;    
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    color: $nc-brand-blue;
 }
 
 * {
@@ -20,6 +21,11 @@ body {
 
 a {
     font-size: 1.28571429rem;
+    text-decoration: none;
+}
+
+a, button {
+    cursor: pointer;
 }
 
 p {
@@ -27,7 +33,7 @@ p {
 }
 
 h1 {
-    font-size: 2.5rem;
+    font-size: 2.85714286rem;
 }
 
 .site-header {
@@ -35,7 +41,6 @@ h1 {
     justify-content: space-between;
     height: 60px;
     border-bottom: 1px solid #ebf3fb;
-    max-width: 1400px;
 }
 
 .site-header--logo {
@@ -52,29 +57,29 @@ h1 {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 26px 24px;
-        text-decoration-line: none;
-        color: #223973;
+        color: $nc-brand-blue;
+        padding: 1.85rem 1.7rem;
+
+        &.active,
+        &:active,
+        &:focus,
+        &:hover {
+          color: $nc-brand-blue-light;
+        }
     }
+    
 }
 
-.site-heading {
+.heading-container {
+    max-width: 60vw;
+    min-height: 70vh;
+    margin-right: auto;
+    margin-left: auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 180px 40px 72px;
-}
-
-.heading-wrap {
-    max-width: 660px;
-
-    h1 {
-        color: #223973;
-        font-weight: 500;
-    }
 
     p {
-        margin-top: 32px;
-        color: #34405e;
+        margin-top: $nc-gutter-md;
     }
 }

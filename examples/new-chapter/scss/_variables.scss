@@ -1,1 +1,8 @@
-$project-brand-red: red;
+$nc-brand-blue: #223973;
+$nc-brand-blue-light: lighten($nc-brand-blue, 20%);
+
+$nc-gutter: 1rem;
+$nc-gutter-sm: $nc-gutter * 0.8;
+$nc-gutter-md: $nc-gutter * 2;
+$nc-gutter-lg: $nc-gutter * 3;
+$nc-gutter-xl: $nc-gutter * 6;
