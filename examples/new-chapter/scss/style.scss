@@ -111,12 +111,32 @@ h3 {
     padding-bottom: 1.71428571rem;
     margin-bottom: $nc-gutter-lg;
 
+    .item-wrap {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            max-height: 100%;
+            max-width: 100%;
+            vertical-align: middle;
+            transform: scaleX(1) scaleY(1) scaleZ(1);        
+        }
+    }
+   
     h3 {
         margin-top: $nc-gutter-md;
     }
 
-    img {
-        max-height: 100%;
-        max-width: 100%;
+    &:focus,
+    &:hover {
+        transform: translateX(0px) translateY(0px) translateZ(0px) scaleX(1) scaleY(1) scaleZ(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skewX(0deg) skewY(0deg);
+        opacity: 1;
+        transition: border 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, background-color 0.2s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;    
+    
+        img {
+            transform-style: preserve-3d;
+            transition: transform 300ms;
+            transform: scaleX(1.05) scaleY(1.05) scaleZ(1);
+        }
     }
 }
