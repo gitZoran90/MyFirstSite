@@ -36,6 +36,10 @@ h1 {
     font-size: 2.85714286rem;
 }
 
+h3 {
+    font-size: 1.71428571rem;
+}
+
 .site-header {
     display: flex;
     justify-content: space-between;
@@ -81,5 +85,38 @@ h1 {
 
     p {
         margin-top: $nc-gutter-md;
+    }
+}
+
+.related-work--container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 95vw;
+}
+
+.related-work--list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col--6 {
+    flex: 0 0 calc(50%);
+    width: calc(50%);
+}
+
+.related-work--link {
+    display: inline-block;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1.71428571rem;
+    margin-bottom: $nc-gutter-lg;
+
+    h3 {
+        margin-top: $nc-gutter-md;
+    }
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
     }
 }
