@@ -36,8 +36,20 @@ h1 {
     font-size: 2.85714286rem;
 }
 
+h2 {
+    font-size: 2.28rem;
+}
+
 h3 {
     font-size: 1.71428571rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+blockquote {
+    font-size: 1.5rem;
 }
 
 .site-header {
@@ -139,4 +151,130 @@ h3 {
             transform: scaleX(1.05) scaleY(1.05) scaleZ(1);
         }
     }
+}
+
+.logos-clients {
+    padding: 6rem 3rem; 
+    min-height: 100vh;
+    border-top: 1px solid #d2dae8;
+}
+
+.logos-position {
+    max-height: 15vh;
+    max-width: 51.4vw;
+    margin-right: auto;
+    margin-left: auto;
+
+    h4 {
+        text-align: center;
+    }
+}
+
+.logo-clients {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: $nc-gutter-lg;
+    margin-bottom: $nc-gutter-xl;
+    max-height: 15vh;
+}
+
+.teachers-container {
+    display: flex;
+    min-width: 84.64vw;
+    margin-top: 1.5rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.teacher-position {
+    flex-basis: 33.33%;
+}
+
+.text-position {
+    padding-right: 1.14rem;
+    padding-left: 1.14rem;
+    text-align: left;
+
+        blockquote {
+            padding: 0;
+            margin-top: 1.7rem;
+            margin-bottom: 1.7rem;
+            line-height: 1.5
+        }
+
+        p {
+            margin-bottom: 0.28rem;
+            line-height: 2.28rem;
+            font-weight: 400;
+        }     
+}
+
+.paragraph-style {
+    font-size: 1.14rem;
+    color: #6173a1;
+     }
+
+.work-together {
+    position: relative;
+    padding: 6.85rem 2.85rem 7.42rem;
+    background-color: #f5f8ff;
+    text-align: center;
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: -3.85rem;
+            margin-left: -3.85rem;
+        }
+
+        p {
+            color: #6173a1;
+        }
+
+        a {
+            display: inline-block;
+            background-color: #ef476f;
+            color: #fff;
+            margin-top: 0.57rem;
+            padding: 0.85rem 1.71rem;
+            border-radius: 0.28rem;
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+}
+
+.site-footer {
+    padding: 1.71rem 2.85rem;
+    background-image: url(https://daks2k3a4ib2z.cloudfront.net/59e488207032510001bc5a21/59e488207032510001bc5a56_logo-full-footer.jpg);
+    background-position: 50% 100%;
+    background-size: 28.71rem;
+    background-repeat: no-repeat;
+}
+
+.custom-container {
+    max-width: 81.42rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-registration {
+    display: flex;
+    justify-content: space-between; 
+    margin-top: 0.58rem;
+    font-size: 1rem;
+
+        a {
+            border-bottom: 2px solid rgba(34,57,115,.2);
+        }
+}
+
+.footer-copyright {
+    margin-top: 1.14rem;
+    text-align: center;
+    font-size: 1.14rem;
+
+        a {
+            border-bottom: 2px solid rgba(34, 57, 115, 0.2);
+        }
 }
