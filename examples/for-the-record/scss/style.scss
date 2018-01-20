@@ -13,6 +13,7 @@ body {
 
 h1 {
     float: right;
+    margin: 60px 0 0 0;
     font-family: 'chunk';
     margin: 60px 0 0 0;
     font-size: 5.8285rem;
@@ -59,13 +60,12 @@ span {
     padding: 20px 0 30px 0;
     border-bottom: solid 1px #000;
 
-        p {
-            align-items: center;
-            width: 970px;
-            column-width: 460px;
-            column-gap: 45px;
-            column-rule: 1px solid #000;
-
-            }
+    p {
+        align-items: center;
+        width: 970px;
+        column-width: 460px;
+        column-gap: 45px;
+        column-rule: 1px solid #000;
+    }
 }
 
