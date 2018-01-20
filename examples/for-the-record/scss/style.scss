@@ -1,0 +1,71 @@
+@import "typography";
+@import "variables";
+
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0 5px;
+    background: #F4F6F5;
+}
+
+h1 {
+    float: right;
+    margin: 60px 0 0 0;
+    font-family: 'chunk';
+    margin: 60px 0 0 0;
+    font-size: 5.8285rem;
+    font-weight: lighter;
+}
+
+h2 {
+    width: 150px;
+    height: 150px;
+    background: #000;
+    border-radius: 5.35rem;
+    margin: 25px 0 0 0;
+    float: left;
+    position: relative;
+    font-weight: lighter;
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 970px;
+    border-bottom: solid 1px #000;
+}
+
+span {
+    padding: 12px 0 0 10px;
+    width: 50px;
+    height: 48px;
+    background: #fff568;
+    border-radius: 2.14rem;
+    position: absolute;
+    top: 45px;
+    left: 45px;
+    font-family: ShareRegular, sans-serif;
+    font-size: 2rem;
+}
+
+.first-section {
+    width: 970px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'share';
+    padding: 20px 0 30px 0;
+    border-bottom: solid 1px #000;
+
+    p {
+        align-items: center;
+        width: 970px;
+        column-width: 460px;
+        column-gap: 45px;
+        column-rule: 1px solid #000;
+    }
+}
+

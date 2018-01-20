@@ -245,36 +245,56 @@ blockquote {
 }
 
 .site-footer {
-    padding: 1.71rem 2.85rem;
+    padding: 1.71rem 2.8rem;
     background-image: url(https://daks2k3a4ib2z.cloudfront.net/59e488207032510001bc5a21/59e488207032510001bc5a56_logo-full-footer.jpg);
     background-position: 50% 100%;
     background-size: 28.71rem;
     background-repeat: no-repeat;
+    font-family: 'inter-ul', sans-serif;
+    color: #6173a1;
+
+        a {
+            color: #559cad;
+            text-decoration: none;
+            cursor: pointer;
+            border-bottom: 2px solid rgba(34,57,115,.2);
+        }
+
+        a:hover {
+            border-bottom-color: #559cad;
+        
+        }
 }
 
 .custom-container {
+    margin-top: 0.58rem;
     max-width: 81.42rem;
     margin-left: auto;
     margin-right: auto;
+
+        a {
+            font-size: 1rem;
+        }
 }
 
 .footer-registration {
     display: flex;
     justify-content: space-between; 
+    align-items: center;
     margin-top: 0.58rem;
-    font-size: 1rem;
-
-        a {
-            border-bottom: 2px solid rgba(34,57,115,.2);
-        }
 }
 
+
 .footer-copyright {
-    margin-top: 1.14rem;
+    margin-top: 2.2rem;
     text-align: center;
     font-size: 1.14rem;
 
         a {
-            border-bottom: 2px solid rgba(34, 57, 115, 0.2);
+            font-size: 1.1428rem;
+        }
+
+        p {
+            font-size: 0.8571rem;
         }
 }
