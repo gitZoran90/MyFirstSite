@@ -6,66 +6,75 @@ html {
 }
 
 body {
-    margin: 0;
-    padding: 0 5px;
-    background: #F4F6F5;
-}
-
-h1 {
-    float: right;
-    margin: 60px 0 0 0;
     font-family: 'chunk';
-    margin: 60px 0 0 0;
-    font-size: 5.8285rem;
-    font-weight: lighter;
+    background: $fr-brand-white;
+    -webkit-font-smoothing: antialiased;
+
 }
 
-h2 {
-    width: 150px;
-    height: 150px;
-    background: #000;
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 72.88125vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    height: 30.5vh;
+    font-family: 'chunk';
+    border-bottom: solid 1px $fr-border-back-black;
+}
+
+.site-header-logo {
+    width: 10.71rem;
+    height: 10.71rem;
+    background: $fr-border-back-black;
     border-radius: 5.35rem;
-    margin: 25px 0 0 0;
+    margin: 1.78rem 0 0 0;
     float: left;
     position: relative;
     font-weight: lighter;
+
+    span {
+        padding: 0.85rem 0 0 0.83rem;
+        width: 3.571rem;
+        height: 3.42rem;
+        background: $fr-span-yellow;
+        border-radius: 2.14rem;
+        position: absolute;
+        top: 3.214rem;
+        left: 3.214rem;
+        font-family: ShareRegular, sans-serif;
+        font-size: 2rem;
+    }
 }
 
-header {
-    margin-left: auto;
-    margin-right: auto;
-    height: 200px;
-    width: 970px;
-    border-bottom: solid 1px #000;
-}
-
-span {
-    padding: 12px 0 0 10px;
-    width: 50px;
-    height: 48px;
-    background: #fff568;
-    border-radius: 2.14rem;
-    position: absolute;
-    top: 45px;
-    left: 45px;
-    font-family: ShareRegular, sans-serif;
-    font-size: 2rem;
+.site-header-text {
+    float: right;
+    margin: 4.285rem 0 0 0;
+    font-family: 'chunk';
+    margin: 4.2857rem 0 0 0;
+    font-size: 2.8285rem;
+    font-weight: lighter;
 }
 
 .first-section {
-    width: 970px;
-    margin-left: auto;
-    margin-right: auto;
     font-family: 'share';
-    padding: 20px 0 30px 0;
-    border-bottom: solid 1px #000;
+    padding: 1.428rem 0 2.142rem 0;
+    border-bottom: solid 1px $fr-border-back-black;
 
     p {
         align-items: center;
-        width: 970px;
-        column-width: 460px;
-        column-gap: 45px;
-        column-rule: 1px solid #000;
+        width: 69.2857rem;
+        column-width: 32.8571rem;
+        column-gap: 3.214rem;
+        column-rule: 1px solid $fr-border-back-black;
     }
 }
 
