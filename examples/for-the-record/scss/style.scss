@@ -68,11 +68,35 @@ body {
     border-bottom: solid 1px $fr-border-back-black;
 
     p {
-        align-items: center;
         width: 69.2857rem;
         column-width: 32.8571rem;
         column-gap: 3.214rem;
         column-rule: 1px solid $fr-border-back-black;
+    }
+}
+
+.site-second-section {
+    padding: 1.4285rem 0 2.1428rem 0;
+    border-bottom: solid 1px $fr-border-back-black;
+}
+
+.second-section-text {
+    font-size: 2rem;
+    position: relative;
+    padding: 0 0 0 5rem;
+    margin: 3.5714rem 0 0.7142rem 0;
+
+    span {
+        padding: 0.8571rem 0 0 0;
+        width: 4.2857rem;
+        height: 3.4285rem;
+        background: $fr-border-back-black;
+        color: $fr-brand-white;
+        border-radius: 2.1428rem;
+        text-align: center;
+        position: absolute;
+        left: 0px;
+        top: -0.7857rem;
     }
 }
 
