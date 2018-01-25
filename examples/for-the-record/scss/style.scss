@@ -20,6 +20,11 @@ ul {
     list-style: none;
 }
 
+li {
+    height:100%;
+    float:left;
+}
+
 .wrapper {
     width: 72.88125vw;
     margin-left: auto;
@@ -80,6 +85,7 @@ ul {
 }
 
 .site-second-section {
+    float: left;
     padding: 1.4285rem 0 2.1428rem 0;
     border-bottom: solid 1px $fr-border-back-black;
 }
@@ -107,11 +113,6 @@ ul {
 .second-section-list {
     height: 23.6456vh;
     margin: 2.5rem 0 0 0;
-
-    li {
-        height:100%;
-        float:left;
-    }
 
     li:nth-of-type(1) {
         width:32.9%;
@@ -159,4 +160,59 @@ ul {
     }
 }
 
+.ul-class {
+    margin: 30px 0 50px 0;
+    font-size: 1.2927rem;
+}
+
+.li-style {
+    padding: 0.2142rem 0 0 2.8571rem;
+    position: relative;
+    margin: 0 2.1428rem 1.4285rem 0;
+}
+
+.list-span-class {
+    width: 2.34375vw;
+    height: 4.75vh;
+    -webkit-border-radius: 1.0714rem;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.span-orange {
+    background: $fr-orange;
+}
+
+.span-lightblue {
+    background: $fr-lightblue;
+}
+
+.span-green {
+    background: $fr-green;
+}
+
+.span-lightyellow {
+    background: $fr-lightyellow;
+}
+
+.span-pink {
+    background: $fr-pink;
+}
+
+.span-li-red {
+    background: $fr-li-red;
+}
+
+.span-brown {
+    background: $fr-brown;
+}
+
+.span-pink-violet {
+    background: $fr-pink-violet; 
+}
+
+.span-dark-yellow {
+    background: $fr-dark-yellow;
+}
 
