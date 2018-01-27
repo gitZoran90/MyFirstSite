@@ -16,6 +16,15 @@ body {
     padding: 0;
 }
 
+ul {
+    list-style: none;
+}
+
+li {
+    height:100%;
+    float:left;
+}
+
 .wrapper {
     width: 72.88125vw;
     margin-left: auto;
@@ -68,11 +77,142 @@ body {
     border-bottom: solid 1px $fr-border-back-black;
 
     p {
-        align-items: center;
         width: 69.2857rem;
         column-width: 32.8571rem;
         column-gap: 3.214rem;
         column-rule: 1px solid $fr-border-back-black;
     }
+}
+
+.site-second-section {
+    float: left;
+    padding: 1.4285rem 0 2.1428rem 0;
+    border-bottom: solid 1px $fr-border-back-black;
+}
+
+.second-section-text {
+    font-size: 2rem;
+    position: relative;
+    padding: 0 0 0 5rem;
+    margin: 3.5714rem 0 0.7142rem 0;
+
+    span {
+        padding: 0.8571rem 0 0 0;
+        width: 4.2857rem;
+        height: 3.4285rem;
+        background: $fr-border-back-black;
+        color: $fr-brand-white;
+        border-radius: 2.1428rem;
+        text-align: center;
+        position: absolute;
+        left: 0px;
+        top: -0.7857rem;
+    }
+}
+
+.second-section-list {
+    height: 23.6456vh;
+    margin: 2.5rem 0 0 0;
+
+    li:nth-of-type(1) {
+        width:32.9%;
+        background:$fr-orange;
+    }
+    
+    li:nth-of-type(2) {
+        width:15.2%;
+        background:$fr-lightblue;
+    }
+
+    li:nth-of-type(3) {
+        width:13.1%;
+        background:$fr-green;
+    }
+
+    li:nth-of-type(4) {
+        width:10.1%;
+        background:$fr-lightyellow;
+    }
+
+    li:nth-of-type(5) {
+        width:6.6%;
+        background:$fr-pink;
+    }
+
+    li:nth-of-type(6) {
+        width:6%;
+        background:$fr-li-red;
+    }
+
+    li:nth-of-type(7) {
+        width:6%;
+        background:$fr-brown;
+    }
+
+    li:nth-of-type(8) {
+        width:5%;
+        background:$fr-pink-violet;
+    }
+
+    li:nth-of-type(9) {
+        width:4.5%;
+        background:$fr-dark-yellow;
+    }
+}
+
+.second-section-second-list {
+    margin: 30px 0 50px 0;
+    font-size: 1.2927rem;
+}
+
+.second-section-list-description {
+    padding: 0.2142rem 0 0 2.8571rem;
+    position: relative;
+    margin: 0 2.1428rem 1.4285rem 0;
+}
+
+.second-section-list-round {
+    width: 2.34375vw;
+    height: 4.75vh;
+    -webkit-border-radius: 1.0714rem;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.span-orange {
+    background: $fr-orange;
+}
+
+.span-lightblue {
+    background: $fr-lightblue;
+}
+
+.span-green {
+    background: $fr-green;
+}
+
+.span-lightyellow {
+    background: $fr-lightyellow;
+}
+
+.span-pink {
+    background: $fr-pink;
+}
+
+.span-li-red {
+    background: $fr-li-red;
+}
+
+.span-brown {
+    background: $fr-brown;
+}
+
+.span-pink-violet {
+    background: $fr-pink-violet; 
+}
+
+.span-dark-yellow {
+    background: $fr-dark-yellow;
 }
 
