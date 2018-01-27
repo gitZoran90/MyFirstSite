@@ -84,13 +84,14 @@ li {
     }
 }
 
-.site-second-section {
+.section-wrapper {
     float: left;
     padding: 1.4285rem 0 2.1428rem 0;
     border-bottom: solid 1px $fr-border-back-black;
+    width: 100%;
 }
 
-.second-section-text {
+.section-heading-text {
     font-size: 2rem;
     position: relative;
     padding: 0 0 0 5rem;
@@ -180,39 +181,39 @@ li {
     top: 0px;
 }
 
-.span-orange {
+.list-color-orange {
     background: $fr-orange;
 }
 
-.span-lightblue {
+.list-color-lightblue {
     background: $fr-lightblue;
 }
 
-.span-green {
+.list-color-green {
     background: $fr-green;
 }
 
-.span-lightyellow {
+.list-color-lightyellow {
     background: $fr-lightyellow;
 }
 
-.span-pink {
+.list-color-pink {
     background: $fr-pink;
 }
 
-.span-li-red {
+.list-color-li-red {
     background: $fr-li-red;
 }
 
-.span-brown {
+.list-color-brown {
     background: $fr-brown;
 }
 
-.span-pink-violet {
+.list-color-pink-violet {
     background: $fr-pink-violet; 
 }
 
-.span-dark-yellow {
+.list-color-dark-yellow {
     background: $fr-dark-yellow;
 }
 
