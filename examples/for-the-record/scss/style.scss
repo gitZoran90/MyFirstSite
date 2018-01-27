@@ -217,3 +217,66 @@ li {
     background: $fr-dark-yellow;
 }
 
+.third-section-list {
+    float: left;
+    margin: 2.5rem 0 3.5714rem 0;
+    width: 100%
+}
+
+.third-section-list-description {
+    height: 8.1300vh;
+    clear: both;
+    position: relative;
+    margin: 0 0 0.7142rem 0;
+
+    span {
+        position: absolute;
+        top: 1.4285rem;
+        left: 100%;
+        margin-left: 1.4285rem;
+        font-size: 1.1428rem;
+    }
+}
+
+.thr-sec-list-usa {
+    width: 73.2%;
+    background: $fr-orange;
+}
+
+.thr-sec-list-jamaica {
+    width: 13.1%;
+    background: $fr-lightblue;
+}
+
+.thr-sec-list-uk {
+    width: 8.6%;
+    background: $fr-green;
+}
+
+.thr-sec-list-france {
+    width: 2.1%;
+    background: $fr-lightyellow;
+}
+
+.thr-sec-list-brazil {
+    width: 1.5%;
+    background: $fr-pink;
+}
+
+.thr-sec-list-sweden {
+    width: 0.5%;
+    background: $fr-li-red;
+}
+
+.thr-sec-list-columbia {
+    width: 0.5%;
+    background: $fr-brown; 
+}
+
+.thr-sec-list-egipt {
+    width: 0.5%;
+    background: $fr-pink-violet;
+}
+
+
+
