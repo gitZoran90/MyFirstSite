@@ -20,6 +20,9 @@
   },
   "homepage": "https://github.com/gitZoran90/MyFirstSite#readme",
   "devDependencies": {
-    "stylelint-config-standard": "^18.0.0"
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended-scss": "^3.0.0",
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-scss": "^2.2.0"
   }
 }
