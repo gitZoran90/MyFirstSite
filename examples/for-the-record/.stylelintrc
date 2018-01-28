@@ -3,7 +3,8 @@
   "plugins": [
     "stylelint-declaration-use-variable",
     "stylelint-declaration-block-no-ignored-properties",
-    "stylelint-order"
+    "stylelint-order",
+    "stylelint-scss"
   ],
   "rules": {
     "indentation": 4,
@@ -14,6 +15,8 @@
 			"custom-properties",
 			"declarations"
 		],
-		"order/properties-alphabetical-order": true
+		"order/properties-alphabetical-order": true,
+    "scss/dollar-variable-pattern": "^foo",
+    "scss/selector-no-redundant-nesting-selector": true,
   }
 }
