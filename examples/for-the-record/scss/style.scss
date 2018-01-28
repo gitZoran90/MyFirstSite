@@ -25,72 +25,13 @@ li {
     height: 100%;
 }
 
-.wrapper {
+.fr-site-content--wrap {
     margin-left: auto;
     margin-right: auto;
     width: 72.88125vw;
 }
 
-.site-header {
-    border-bottom: solid 1px $fr-border-back-black;
-    display: flex;
-    font-family: 'chunk';
-    height: 30.5vh;
-    justify-content: space-between;
-}
-
-.site-header-logo {
-    background: $fr-border-back-black;
-    border-radius: 5.35rem;
-    float: left;
-    font-weight: lighter;
-    height: 10.71rem;
-    margin: 1.78rem 0 0;
-    position: relative;
-    width: 10.71rem;
-
-    span {
-        background: $fr-span-yellow;
-        border-radius: 2.14rem;
-        font-family: ShareRegular, sans-serif;
-        font-size: 2rem;
-        height: 3.42rem;
-        left: 3.214rem;
-        padding: 0.85rem 0 0 0.83rem;
-        position: absolute;
-        top: 3.214rem;
-        width: 3.571rem;
-    }
-}
-
-.site-header-text {
-    float: right;
-    font-family: 'chunk';
-    font-size: 2.8285rem;
-    font-weight: lighter;
-    margin: 4.285rem 0 0;
-}
-
-.first-section {
-    border-bottom: solid 1px $fr-border-back-black;
-    padding: 1.428rem 0 2.142rem;
-
-    p {
-        column-gap: 3.214rem;
-        column-rule: 1px solid $fr-border-back-black;
-        column-width: 32.8571rem;
-        width: 69.2857rem;
-    }
-}
-
-.section-wrapper {
-    border-bottom: solid 1px $fr-border-back-black;
-    float: left;
-    padding: 1.4285rem 0 2.1428rem;
-    width: 100%;
-}
-
-.section-heading-text {
+.fr-section--title {
     font-size: 2rem;
     margin: 3.5714rem 0 0.7142rem;
     padding: 0 0 0 5rem;
@@ -110,169 +51,228 @@ li {
     }
 }
 
-.second-section-list {
-    height: 23.6456vh;
-    margin: 2.5rem 0 0;
+.fr-site-header {
+    border-bottom: solid 1px $fr-border-back-black;
+    display: flex;
+    font-family: 'chunk';
+    height: 30.5vh;
+    justify-content: space-between;
 
-    li:nth-of-type(1) {
-        background: $fr-orange;
-        width: 32.9%;
+    .logo {
+        background: $fr-border-back-black;
+        border-radius: 5.35rem;
+        float: left;
+        font-weight: lighter;
+        height: 10.71rem;
+        margin: 1.78rem 0 0;
+        position: relative;
+        width: 10.71rem;
+
+        span {
+            background: $fr-span-yellow;
+            border-radius: 2.14rem;
+            font-family: ShareRegular, sans-serif;
+            font-size: 2rem;
+            height: 3.42rem;
+            left: 3.214rem;
+            padding: 0.85rem 0 0 0.83rem;
+            position: absolute;
+            top: 3.214rem;
+            width: 3.571rem;
+        }
     }
 
-    li:nth-of-type(2) {
-        background: $fr-lightblue;
-        width: 15.2%;
-    }
-
-    li:nth-of-type(3) {
-        background: $fr-green;
-        width: 13.1%;
-    }
-
-    li:nth-of-type(4) {
-        background: $fr-lightyellow;
-        width: 10.1%;
-    }
-
-    li:nth-of-type(5) {
-        background: $fr-pink;
-        width: 6.6%;
-    }
-
-    li:nth-of-type(6) {
-        background: $fr-li-red;
-        width: 6%;
-    }
-
-    li:nth-of-type(7) {
-        background: $fr-brown;
-        width: 6%;
-    }
-
-    li:nth-of-type(8) {
-        background: $fr-pink-violet;
-        width: 5%;
-    }
-
-    li:nth-of-type(9) {
-        background: $fr-dark-yellow;
-        width: 4.5%;
+    .title {
+        float: right;
+        font-family: 'chunk';
+        font-size: 2.8285rem;
+        font-weight: lighter;
+        margin: 4.285rem 0 0;
     }
 }
 
-.second-section-second-list {
-    font-size: 1.2927rem;
-    margin: 30px 0 50px;
+.fr-section {
+    border-bottom: solid 1px $fr-border-back-black;
+    padding: 1.428rem 0 2.142rem;
+
+    &.fr-section--intro p {
+        column-gap: 3.214rem;
+        column-rule: 1px solid $fr-border-back-black;
+        column-width: 32.8571rem;
+        width: 69.2857rem;
+    }
+
+    &.fr-section--numbered {
+        float: left;
+        width: 100%;
+    }
 }
 
-.second-section-list-description {
-    margin: 0 2.1428rem 1.4285rem 0;
-    padding: 0.2142rem 0 0 2.8571rem;
-    position: relative;
+.fr-genres {
+    .diagram {
+        height: 23.6456vh;
+        margin: 2.5rem 0 0;
+
+        li:nth-of-type(1) {
+            background: $fr-orange;
+            width: 32.9%;
+        }
+
+        li:nth-of-type(2) {
+            background: $fr-lightblue;
+            width: 15.2%;
+        }
+
+        li:nth-of-type(3) {
+            background: $fr-green;
+            width: 13.1%;
+        }
+
+        li:nth-of-type(4) {
+            background: $fr-lightyellow;
+            width: 10.1%;
+        }
+
+        li:nth-of-type(5) {
+            background: $fr-pink;
+            width: 6.6%;
+        }
+
+        li:nth-of-type(6) {
+            background: $fr-li-red;
+            width: 6%;
+        }
+
+        li:nth-of-type(7) {
+            background: $fr-brown;
+            width: 6%;
+        }
+
+        li:nth-of-type(8) {
+            background: $fr-pink-violet;
+            width: 5%;
+        }
+
+        li:nth-of-type(9) {
+            background: $fr-dark-yellow;
+            width: 4.5%;
+        }
+    }
+
+    .legend {
+        font-size: 1.2927rem;
+        margin: 30px 0 50px;
+
+        .genre {
+            margin: 0 2.1428rem 1.4285rem 0;
+            padding: 0.2142rem 0 0 2.8571rem;
+            position: relative;
+
+            span {
+                -webkit-border-radius: 1.0714rem;
+                height: 25px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 25px;
+
+                &.funk {
+                    background: $fr-orange;
+                }
+
+                &.soul-rnb {
+                    background: $fr-lightblue;
+                }
+
+                &.reggae-ska {
+                    background: $fr-green;
+                }
+
+                &.northern-soul {
+                    background: $fr-lightyellow;
+                }
+
+                &.mod-beat-psych {
+                    background: $fr-pink;
+                }
+
+                &.jazz {
+                    background: $fr-li-red;
+                }
+
+                &.latin-boogaloo {
+                    background: $fr-brown;
+                }
+
+                &.motown {
+                    background: $fr-pink-violet;
+                }
+
+                &.rocking-rnb {
+                    background: $fr-dark-yellow;
+                }
+            }
+        }
+    }
 }
 
-.second-section-list-round {
-    -webkit-border-radius: 1.0714rem;
-    height: 4.75vh;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 2.34375vw;
-}
-
-.list-color-orange {
-    background: $fr-orange;
-}
-
-.list-color-lightblue {
-    background: $fr-lightblue;
-}
-
-.list-color-green {
-    background: $fr-green;
-}
-
-.list-color-lightyellow {
-    background: $fr-lightyellow;
-}
-
-.list-color-pink {
-    background: $fr-pink;
-}
-
-.list-color-li-red {
-    background: $fr-li-red;
-}
-
-.list-color-brown {
-    background: $fr-brown;
-}
-
-.list-color-pink-violet {
-    background: $fr-pink-violet;
-}
-
-.list-color-dark-yellow {
-    background: $fr-dark-yellow;
-}
-
-.third-section-list {
+.fr-country-origin {
     float: left;
     margin: 2.5rem 0 3.5714rem;
     width: 100%;
-}
 
-.third-section-list-description {
-    clear: both;
-    height: 8.13vh;
-    margin: 0 0 0.7142rem;
-    position: relative;
+    .country {
+        clear: both;
+        height: 8.13vh;
+        margin: 0 0 0.7142rem;
+        position: relative;
 
-    span {
-        font-size: 1.1428rem;
-        left: 100%;
-        margin-left: 1.4285rem;
-        position: absolute;
-        top: 1.4285rem;
+        p {
+            font-size: 1.1428rem;
+            left: 100%;
+            margin-left: 1.4285rem;
+            position: absolute;
+            top: 1.4285rem;
+        }
+
+        &.usa {
+            background: $fr-orange;
+            width: 73.2%;
+        }
+
+        &.jamaica {
+            background: $fr-lightblue;
+            width: 13.1%;
+        }
+
+        &.uk {
+            background: $fr-green;
+            width: 8.6%;
+        }
+
+        &.france {
+            background: $fr-lightyellow;
+            width: 2.1%;
+        }
+
+        &.brazil {
+            background: $fr-pink;
+            width: 1.5%;
+        }
+
+        &.sweden {
+            background: $fr-li-red;
+            width: 0.5%;
+        }
+
+        &.columbia {
+            background: $fr-brown;
+            width: 0.5%;
+        }
+
+        &.egipt {
+            background: $fr-pink-violet;
+            width: 0.5%;
+        }
     }
-}
-
-.thr-sec-list-usa {
-    background: $fr-orange;
-    width: 73.2%;
-}
-
-.thr-sec-list-jamaica {
-    background: $fr-lightblue;
-    width: 13.1%;
-}
-
-.thr-sec-list-uk {
-    background: $fr-green;
-    width: 8.6%;
-}
-
-.thr-sec-list-france {
-    background: $fr-lightyellow;
-    width: 2.1%;
-}
-
-.thr-sec-list-brazil {
-    background: $fr-pink;
-    width: 1.5%;
-}
-
-.thr-sec-list-sweden {
-    background: $fr-li-red;
-    width: 0.5%;
-}
-
-.thr-sec-list-columbia {
-    background: $fr-brown;
-    width: 0.5%;
-}
-
-.thr-sec-list-egipt {
-    background: $fr-pink-violet;
-    width: 0.5%;
 }
