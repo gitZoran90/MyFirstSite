@@ -4,11 +4,12 @@
     "stylelint-declaration-use-variable",
     "stylelint-declaration-block-no-ignored-properties",
     "stylelint-order",
-    "stylelint-scss"
+    "stylelint-scss",
   ],
   "rules": {
     "indentation": 4,
     "font-family-no-missing-generic-family-keyword": null,
+    "shorthand-property-no-redundant-values": true,
     "sh-waqar/declaration-use-variable": [["/color/", "background"]],
     "plugin/declaration-block-no-ignored-properties": true,
     "order/order": [
@@ -16,6 +17,6 @@
 			"declarations"
 		],
 		"order/properties-alphabetical-order": true,
-    "scss/selector-no-redundant-nesting-selector": true
+    "scss/selector-no-redundant-nesting-selector": true,
   }
 }
