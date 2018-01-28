@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/gitZoran90/MyFirstSite/issues"
   },
-  "homepage": "https://github.com/gitZoran90/MyFirstSite#readme"
+  "homepage": "https://github.com/gitZoran90/MyFirstSite#readme",
+  "devDependencies": {
+    "stylelint-config-standard": "^18.0.0"
+  }
 }
