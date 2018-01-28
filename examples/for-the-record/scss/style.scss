@@ -6,8 +6,8 @@ html {
 }
 
 body {
-    font-family: 'share';
     background: $fr-brand-white;
+    font-family: 'share';
     -webkit-font-smoothing: antialiased;
 }
 
@@ -21,164 +21,163 @@ ul {
 }
 
 li {
-    height:100%;
-    float:left;
+    float: left;
+    height: 100%;
 }
 
 .wrapper {
-    width: 72.88125vw;
     margin-left: auto;
     margin-right: auto;
+    width: 72.88125vw;
 }
 
 .site-header {
-    display: flex;
-    justify-content: space-between;
-    height: 30.5vh;
-    font-family: 'chunk';
     border-bottom: solid 1px $fr-border-back-black;
+    display: flex;
+    font-family: 'chunk';
+    height: 30.5vh;
+    justify-content: space-between;
 }
 
 .site-header-logo {
-    width: 10.71rem;
-    height: 10.71rem;
     background: $fr-border-back-black;
     border-radius: 5.35rem;
-    margin: 1.78rem 0 0 0;
     float: left;
-    position: relative;
     font-weight: lighter;
+    height: 10.71rem;
+    margin: 1.78rem 0 0;
+    position: relative;
+    width: 10.71rem;
 
     span {
-        padding: 0.85rem 0 0 0.83rem;
-        width: 3.571rem;
-        height: 3.42rem;
         background: $fr-span-yellow;
         border-radius: 2.14rem;
-        position: absolute;
-        top: 3.214rem;
-        left: 3.214rem;
         font-family: ShareRegular, sans-serif;
         font-size: 2rem;
+        height: 3.42rem;
+        left: 3.214rem;
+        padding: 0.85rem 0 0 0.83rem;
+        position: absolute;
+        top: 3.214rem;
+        width: 3.571rem;
     }
 }
 
 .site-header-text {
     float: right;
-    margin: 4.285rem 0 0 0;
     font-family: 'chunk';
-    margin: 4.2857rem 0 0 0;
     font-size: 2.8285rem;
     font-weight: lighter;
+    margin: 4.285rem 0 0;
 }
 
 .first-section {
-    padding: 1.428rem 0 2.142rem 0;
     border-bottom: solid 1px $fr-border-back-black;
+    padding: 1.428rem 0 2.142rem;
 
     p {
-        width: 69.2857rem;
-        column-width: 32.8571rem;
         column-gap: 3.214rem;
         column-rule: 1px solid $fr-border-back-black;
+        column-width: 32.8571rem;
+        width: 69.2857rem;
     }
 }
 
 .section-wrapper {
-    float: left;
-    padding: 1.4285rem 0 2.1428rem 0;
     border-bottom: solid 1px $fr-border-back-black;
+    float: left;
+    padding: 1.4285rem 0 2.1428rem;
     width: 100%;
 }
 
 .section-heading-text {
     font-size: 2rem;
-    position: relative;
+    margin: 3.5714rem 0 0.7142rem;
     padding: 0 0 0 5rem;
-    margin: 3.5714rem 0 0.7142rem 0;
+    position: relative;
 
     span {
-        padding: 0.8571rem 0 0 0;
-        width: 4.2857rem;
-        height: 3.4285rem;
         background: $fr-border-back-black;
-        color: $fr-brand-white;
         border-radius: 2.1428rem;
-        text-align: center;
+        color: $fr-brand-white;
+        height: 3.4285rem;
+        left: 0;
+        padding: 0.8571rem 0 0;
         position: absolute;
-        left: 0px;
+        text-align: center;
         top: -0.7857rem;
+        width: 4.2857rem;
     }
 }
 
 .second-section-list {
     height: 23.6456vh;
-    margin: 2.5rem 0 0 0;
+    margin: 2.5rem 0 0;
 
     li:nth-of-type(1) {
-        width:32.9%;
-        background:$fr-orange;
+        background: $fr-orange;
+        width: 32.9%;
     }
-    
+
     li:nth-of-type(2) {
-        width:15.2%;
-        background:$fr-lightblue;
+        background: $fr-lightblue;
+        width: 15.2%;
     }
 
     li:nth-of-type(3) {
-        width:13.1%;
-        background:$fr-green;
+        background: $fr-green;
+        width: 13.1%;
     }
 
     li:nth-of-type(4) {
-        width:10.1%;
-        background:$fr-lightyellow;
+        background: $fr-lightyellow;
+        width: 10.1%;
     }
 
     li:nth-of-type(5) {
-        width:6.6%;
-        background:$fr-pink;
+        background: $fr-pink;
+        width: 6.6%;
     }
 
     li:nth-of-type(6) {
-        width:6%;
-        background:$fr-li-red;
+        background: $fr-li-red;
+        width: 6%;
     }
 
     li:nth-of-type(7) {
-        width:6%;
-        background:$fr-brown;
+        background: $fr-brown;
+        width: 6%;
     }
 
     li:nth-of-type(8) {
-        width:5%;
-        background:$fr-pink-violet;
+        background: $fr-pink-violet;
+        width: 5%;
     }
 
     li:nth-of-type(9) {
-        width:4.5%;
-        background:$fr-dark-yellow;
+        background: $fr-dark-yellow;
+        width: 4.5%;
     }
 }
 
 .second-section-second-list {
-    margin: 30px 0 50px 0;
     font-size: 1.2927rem;
+    margin: 30px 0 50px;
 }
 
 .second-section-list-description {
+    margin: 0 2.1428rem 1.4285rem 0;
     padding: 0.2142rem 0 0 2.8571rem;
     position: relative;
-    margin: 0 2.1428rem 1.4285rem 0;
 }
 
 .second-section-list-round {
-    width: 2.34375vw;
-    height: 4.75vh;
     -webkit-border-radius: 1.0714rem;
+    height: 4.75vh;
+    left: 0;
     position: absolute;
-    left: 0px;
-    top: 0px;
+    top: 0;
+    width: 2.34375vw;
 }
 
 .list-color-orange {
@@ -210,7 +209,7 @@ li {
 }
 
 .list-color-pink-violet {
-    background: $fr-pink-violet; 
+    background: $fr-pink-violet;
 }
 
 .list-color-dark-yellow {
@@ -219,64 +218,61 @@ li {
 
 .third-section-list {
     float: left;
-    margin: 2.5rem 0 3.5714rem 0;
-    width: 100%
+    margin: 2.5rem 0 3.5714rem;
+    width: 100%;
 }
 
 .third-section-list-description {
-    height: 8.1300vh;
     clear: both;
+    height: 8.13vh;
+    margin: 0 0 0.7142rem;
     position: relative;
-    margin: 0 0 0.7142rem 0;
 
     span {
-        position: absolute;
-        top: 1.4285rem;
+        font-size: 1.1428rem;
         left: 100%;
         margin-left: 1.4285rem;
-        font-size: 1.1428rem;
+        position: absolute;
+        top: 1.4285rem;
     }
 }
 
 .thr-sec-list-usa {
-    width: 73.2%;
     background: $fr-orange;
+    width: 73.2%;
 }
 
 .thr-sec-list-jamaica {
-    width: 13.1%;
     background: $fr-lightblue;
+    width: 13.1%;
 }
 
 .thr-sec-list-uk {
-    width: 8.6%;
     background: $fr-green;
+    width: 8.6%;
 }
 
 .thr-sec-list-france {
-    width: 2.1%;
     background: $fr-lightyellow;
+    width: 2.1%;
 }
 
 .thr-sec-list-brazil {
-    width: 1.5%;
     background: $fr-pink;
+    width: 1.5%;
 }
 
 .thr-sec-list-sweden {
-    width: 0.5%;
     background: $fr-li-red;
+    width: 0.5%;
 }
 
 .thr-sec-list-columbia {
+    background: $fr-brown;
     width: 0.5%;
-    background: $fr-brown; 
 }
 
 .thr-sec-list-egipt {
-    width: 0.5%;
     background: $fr-pink-violet;
+    width: 0.5%;
 }
-
-
-
