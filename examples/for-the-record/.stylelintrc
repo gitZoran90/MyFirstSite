@@ -1,7 +1,11 @@
 {
   "extends": "stylelint-config-standard",
+  "plugins": [
+    "stylelint-declaration-use-variable"
+  ],
   "rules": {
     "indentation": 4,
-    "font-family-no-missing-generic-family-keyword": null
+    "font-family-no-missing-generic-family-keyword": null,
+    "sh-waqar/declaration-use-variable": [["/color/", "background"]]
   }
 }
