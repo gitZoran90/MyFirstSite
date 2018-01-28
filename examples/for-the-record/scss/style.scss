@@ -84,13 +84,14 @@ li {
     }
 }
 
-.site-second-section {
+.section-wrapper {
     float: left;
     padding: 1.4285rem 0 2.1428rem 0;
     border-bottom: solid 1px $fr-border-back-black;
+    width: 100%;
 }
 
-.second-section-text {
+.section-heading-text {
     font-size: 2rem;
     position: relative;
     padding: 0 0 0 5rem;
@@ -180,39 +181,102 @@ li {
     top: 0px;
 }
 
-.span-orange {
+.list-color-orange {
     background: $fr-orange;
 }
 
-.span-lightblue {
+.list-color-lightblue {
     background: $fr-lightblue;
 }
 
-.span-green {
+.list-color-green {
     background: $fr-green;
 }
 
-.span-lightyellow {
+.list-color-lightyellow {
     background: $fr-lightyellow;
 }
 
-.span-pink {
+.list-color-pink {
     background: $fr-pink;
 }
 
-.span-li-red {
+.list-color-li-red {
     background: $fr-li-red;
 }
 
-.span-brown {
+.list-color-brown {
     background: $fr-brown;
 }
 
-.span-pink-violet {
+.list-color-pink-violet {
     background: $fr-pink-violet; 
 }
 
-.span-dark-yellow {
+.list-color-dark-yellow {
     background: $fr-dark-yellow;
 }
+
+.third-section-list {
+    float: left;
+    margin: 2.5rem 0 3.5714rem 0;
+    width: 100%
+}
+
+.third-section-list-description {
+    height: 8.1300vh;
+    clear: both;
+    position: relative;
+    margin: 0 0 0.7142rem 0;
+
+    span {
+        position: absolute;
+        top: 1.4285rem;
+        left: 100%;
+        margin-left: 1.4285rem;
+        font-size: 1.1428rem;
+    }
+}
+
+.thr-sec-list-usa {
+    width: 73.2%;
+    background: $fr-orange;
+}
+
+.thr-sec-list-jamaica {
+    width: 13.1%;
+    background: $fr-lightblue;
+}
+
+.thr-sec-list-uk {
+    width: 8.6%;
+    background: $fr-green;
+}
+
+.thr-sec-list-france {
+    width: 2.1%;
+    background: $fr-lightyellow;
+}
+
+.thr-sec-list-brazil {
+    width: 1.5%;
+    background: $fr-pink;
+}
+
+.thr-sec-list-sweden {
+    width: 0.5%;
+    background: $fr-li-red;
+}
+
+.thr-sec-list-columbia {
+    width: 0.5%;
+    background: $fr-brown; 
+}
+
+.thr-sec-list-egipt {
+    width: 0.5%;
+    background: $fr-pink-violet;
+}
+
+
 
