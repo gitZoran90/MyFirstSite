@@ -25,6 +25,7 @@
     "stylelint-config-standard": "^18.0.0",
     "stylelint-declaration-block-no-ignored-properties": "^1.0.2",
     "stylelint-declaration-use-variable": "^1.6.0",
+    "stylelint-order": "^0.8.0",
     "stylelint-scss": "^2.2.0"
   }
 }

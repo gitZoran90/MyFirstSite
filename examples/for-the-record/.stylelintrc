@@ -2,12 +2,18 @@
   "extends": "stylelint-config-standard",
   "plugins": [
     "stylelint-declaration-use-variable",
-    "stylelint-declaration-block-no-ignored-properties"
+    "stylelint-declaration-block-no-ignored-properties",
+    "stylelint-order"
   ],
   "rules": {
     "indentation": 4,
     "font-family-no-missing-generic-family-keyword": null,
     "sh-waqar/declaration-use-variable": [["/color/", "background"]],
-    "plugin/declaration-block-no-ignored-properties": true
+    "plugin/declaration-block-no-ignored-properties": true,
+    "order/order": [
+			"custom-properties",
+			"declarations"
+		],
+		"order/properties-alphabetical-order": true
   }
 }
