@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    background: $fr-brand-white;
+    background: $fr-background-color;
     font-family: 'share';
     -webkit-font-smoothing: antialiased;
 }
@@ -38,9 +38,9 @@ li {
     position: relative;
 
     span {
-        background: $fr-border-back-black;
+        background: $fr-black;
         border-radius: 2.1428rem;
-        color: $fr-brand-white;
+        color: $fr-white;
         height: 3.4285rem;
         left: 0;
         padding: 0.8571rem 0 0;
@@ -52,14 +52,14 @@ li {
 }
 
 .fr-site-header {
-    border-bottom: solid 1px $fr-border-back-black;
+    border-bottom: solid 1px $fr-black;
     display: flex;
     font-family: 'chunk';
     height: 30.5vh;
     justify-content: space-between;
 
     .logo {
-        background: $fr-border-back-black;
+        background: $fr-black;
         border-radius: 5.35rem;
         float: left;
         font-weight: lighter;
@@ -69,7 +69,7 @@ li {
         width: 10.71rem;
 
         span {
-            background: $fr-span-yellow;
+            background: $fr-yellow;
             border-radius: 2.14rem;
             font-family: ShareRegular, sans-serif;
             font-size: 2rem;
@@ -92,12 +92,12 @@ li {
 }
 
 .fr-section {
-    border-bottom: solid 1px $fr-border-back-black;
+    border-bottom: solid 1px $fr-black;
     padding: 1.428rem 0 2.142rem;
 
     &.fr-section--intro p {
         column-gap: 3.214rem;
-        column-rule: 1px solid $fr-border-back-black;
+        column-rule: 1px solid $fr-black;
         column-width: 32.8571rem;
         width: 69.2857rem;
     }
@@ -139,7 +139,7 @@ li {
         }
 
         li:nth-of-type(6) {
-            background: $fr-li-red;
+            background: $fr-red;
             width: 6%;
         }
 
@@ -149,12 +149,12 @@ li {
         }
 
         li:nth-of-type(8) {
-            background: $fr-pink-violet;
+            background: $fr-violet;
             width: 5%;
         }
 
         li:nth-of-type(9) {
-            background: $fr-dark-yellow;
+            background: $fr-darkyellow;
             width: 4.5%;
         }
     }
@@ -197,7 +197,7 @@ li {
                 }
 
                 &.jazz {
-                    background: $fr-li-red;
+                    background: $fr-red;
                 }
 
                 &.latin-boogaloo {
@@ -205,11 +205,11 @@ li {
                 }
 
                 &.motown {
-                    background: $fr-pink-violet;
+                    background: $fr-violet;
                 }
 
                 &.rocking-rnb {
-                    background: $fr-dark-yellow;
+                    background: $fr-darkyellow;
                 }
             }
         }
@@ -261,7 +261,7 @@ li {
         }
 
         &.sweden {
-            background: $fr-li-red;
+            background: $fr-red;
             width: 0.5%;
         }
 
@@ -271,8 +271,100 @@ li {
         }
 
         &.egipt {
-            background: $fr-pink-violet;
+            background: $fr-violet;
             width: 0.5%;
         }
     }
 }
+
+.fr-trianges {
+    float: left;
+    height: 50.51vh;
+    margin: 35px 0 50px;
+    position: relative;
+    width: 100%;
+
+    .triangle {
+        border-style: solid;
+        display: inline;
+        position: absolute;
+        top: 50%;
+
+        &.yellow {
+            border-color: $fr-lightyellow transparent transparent;
+            border-width: 14.78rem;
+            top: 0;
+        }
+
+        &.lightblue {
+            border-color: $fr-lightblue transparent transparent;
+            border-width: 10.64rem;
+            left: 14.07rem;
+            margin-top: -10.64rem;
+        }
+
+        &.white {
+            border-color: $fr-white transparent transparent;
+            border-width: 10.64rem;
+            left: 24.71rem;
+            margin-top: -10.64rem;
+        }
+
+        &.black {
+            border-color: $fr-black transparent transparent;
+            border-width: 8.78rem;
+            left: 35.35rem;
+            margin-top: -8.78rem;
+        }
+
+        &.orange {
+            border-color: $fr-orange transparent transparent;
+            border-width: 8.14rem;
+            left: 44.14rem;
+            margin-top: -8.14rem;
+        }
+
+        &.red {
+            border-color: $fr-red transparent transparent;
+            border-width: 7.42rem;
+            left: 52.28rem;
+            margin-top: -7.42rem;
+        }
+
+        &.green {
+            border-color: $fr-green transparent transparent;
+            border-width: 3.57rem;
+            left: 60.42rem;
+            margin-top: -3.57rem;
+        }
+
+        &.pink {
+            border-color: $fr-pink transparent transparent;
+            border-width: 3.14rem;
+            left: 63.28rem;
+            margin-top: -3.14rem;
+        }
+
+        &.grey {
+            border-color: $fr-grey transparent transparent;
+            border-width: 1.07rem;
+            left: 66.42rem;
+            margin-top: -1.07rem;
+        }
+
+        &.violet {
+            border-color: $fr-violet transparent transparent;
+            border-width: 0.71rem;
+            left: 67.5rem;
+            margin-top: -0.71rem;
+        }
+
+        &.brown {
+            border-color: $fr-brown transparent transparent;
+            border-width: 0.71rem;
+            left: 68.21rem;
+            margin-top: -0.71rem;
+        }
+    }
+}
+
