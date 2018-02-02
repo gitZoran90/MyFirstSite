@@ -368,3 +368,45 @@ li {
     }
 }
 
+.fr-decades {
+    float: left;
+    height: 556px;
+    margin: 2.5rem 0 3.57rem;
+    position: relative;
+    width: 100%;
+
+    .cirkle {
+        font-size: 4rem;
+        position: absolute;
+        text-align: center;
+        top: 0;
+
+        &.cirkle-small-size {
+            background: $fr-orange;
+            border-radius: 1.64rem;
+            font-size: 0.8rem;
+            height: 33px;
+            left: 66rem;
+            padding: 0.92rem 0 0;
+            width: 46px;
+        }
+
+        &.cirkle-large-size {
+            background: $fr-lightblue;
+            border-radius: 19.85rem;
+            height: 320px;
+            left: 0;
+            padding: 15.71rem 0 0;
+            width: 556px;
+        }
+
+        &.cirkle-medium-size {
+            background: $fr-green;
+            border-radius: 13.5rem;
+            height: 238px;
+            left: 39.71rem;
+            padding: 9.28rem 0 0;
+            width: 378px;
+        }
+    }
+}
