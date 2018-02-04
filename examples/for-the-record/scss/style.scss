@@ -410,3 +410,62 @@ li {
         }
     }
 }
+
+.oldest {
+    border-top: dashed 1px $fr-black;
+    float: left;
+    margin: 10.71rem 0 10rem;
+    position: relative;
+    width: 100%;
+
+    .oldest-cirkle {
+        border-radius: 7.14rem;
+        font-size: 3.45rem;
+        height: 140px;
+        padding: 4.28rem 0 0;
+        position: absolute;
+        text-align: center;
+        top: -100px;
+        width: 200px;
+
+        &.pink-cirkle {
+            background: $fr-pink;
+        }
+
+        &.yellow-cirkle {
+            background: $fr-lightyellow;
+            right: 0;
+        }
+    }
+}
+
+.newest {
+    float: left;
+    margin: 2.85rem 0;
+    position: relative;
+
+    .newest-cirkle {
+        clear: both;
+        font-size: 1.14rem;
+        margin: 0.71rem 0;
+        padding: 0.35rem 0 0 2.85rem;
+        position: relative;
+    }
+
+    .cirkles {
+        -webkit-border-radius: 15px;
+        height: 30px;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 30px;
+
+        &.newest-pink-cirkle {
+            background: $fr-pink;
+        }
+
+        &.newest-yellow-cirkle {
+            background: $fr-lightyellow;
+        }
+    }
+}
