@@ -25,6 +25,11 @@ li {
     height: 100%;
 }
 
+a {
+    color: $fr-orange;
+    text-decoration: none;
+}
+
 .fr-site-content--wrap {
     margin-left: auto;
     margin-right: auto;
@@ -467,5 +472,24 @@ li {
         &.newest-yellow-cirkle {
             background: $fr-lightyellow;
         }
+    }
+}
+
+.colophon-text {
+    float: left;
+    font-size: 2rem;
+    font-weight: lighter;
+    margin: 3.57rem 0 0.71rem;
+}
+
+.colophon-list {
+    clear: both;
+    float: left;
+    margin: 0.71rem 0 7.14rem;
+
+    li {
+        clear: both;
+        font-size: 1.14rem;
+        line-height: 1.6;
     }
 }
