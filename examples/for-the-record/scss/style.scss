@@ -113,114 +113,6 @@ a {
     }
 }
 
-.fr-genres {
-    .diagram {
-        height: 23.6456vh;
-        margin: 2.5rem 0 0;
-
-        li:nth-of-type(1) {
-            background: $fr-orange;
-            width: 32.9%;
-        }
-
-        li:nth-of-type(2) {
-            background: $fr-lightblue;
-            width: 15.2%;
-        }
-
-        li:nth-of-type(3) {
-            background: $fr-green;
-            width: 13.1%;
-        }
-
-        li:nth-of-type(4) {
-            background: $fr-lightyellow;
-            width: 10.1%;
-        }
-
-        li:nth-of-type(5) {
-            background: $fr-pink;
-            width: 6.6%;
-        }
-
-        li:nth-of-type(6) {
-            background: $fr-red;
-            width: 6%;
-        }
-
-        li:nth-of-type(7) {
-            background: $fr-brown;
-            width: 6%;
-        }
-
-        li:nth-of-type(8) {
-            background: $fr-violet;
-            width: 5%;
-        }
-
-        li:nth-of-type(9) {
-            background: $fr-darkyellow;
-            width: 4.5%;
-        }
-    }
-
-    .legend {
-        font-size: 1.2927rem;
-        margin: 30px 0 50px;
-
-        .genre {
-            margin: 0 2.1428rem 1.4285rem 0;
-            padding: 0.2142rem 0 0 2.8571rem;
-            position: relative;
-
-            span {
-                -webkit-border-radius: 1.0714rem;
-                height: 25px;
-                left: 0;
-                position: absolute;
-                top: 0;
-                width: 25px;
-
-                &.funk {
-                    background: $fr-orange;
-                }
-
-                &.soul-rnb {
-                    background: $fr-lightblue;
-                }
-
-                &.reggae-ska {
-                    background: $fr-green;
-                }
-
-                &.northern-soul {
-                    background: $fr-lightyellow;
-                }
-
-                &.mod-beat-psych {
-                    background: $fr-pink;
-                }
-
-                &.jazz {
-                    background: $fr-red;
-                }
-
-                &.latin-boogaloo {
-                    background: $fr-brown;
-                }
-
-                &.motown {
-                    background: $fr-violet;
-                }
-
-                &.rocking-rnb {
-                    background: $fr-darkyellow;
-                }
-            }
-        }
-    }
-}
-
 .fr-country-origin {
     float: left;
     margin: 2.5rem 0 3.5714rem;
@@ -491,5 +383,113 @@ a {
         clear: both;
         font-size: 1.14rem;
         line-height: 1.6;
+    }
+}
+
+.fr-genres {
+    .diagram {
+        height: 23.6456vh;
+        margin: 2.5rem 0 0;
+
+        li:nth-of-type(1) {
+            background: $fr-orange;
+            width: 32.9%;
+        }
+
+        li:nth-of-type(2) {
+            background: $fr-lightblue;
+            width: 15.2%;
+        }
+
+        li:nth-of-type(3) {
+            background: $fr-green;
+            width: 13.1%;
+        }
+
+        li:nth-of-type(4) {
+            background: $fr-lightyellow;
+            width: 10.1%;
+        }
+
+        li:nth-of-type(5) {
+            background: $fr-pink;
+            width: 6.6%;
+        }
+
+        li:nth-of-type(6) {
+            background: $fr-red;
+            width: 6%;
+        }
+
+        li:nth-of-type(7) {
+            background: $fr-brown;
+            width: 6%;
+        }
+
+        li:nth-of-type(8) {
+            background: $fr-violet;
+            width: 5%;
+        }
+
+        li:nth-of-type(9) {
+            background: $fr-darkyellow;
+            width: 4.5%;
+        }
+    }
+
+    .legend {
+        font-size: 1.2927rem;
+        margin: 30px 0 50px;
+
+        .genre {
+            margin: 0 2.1428rem 1.4285rem 0;
+            padding: 0.2142rem 0 0 2.8571rem;
+            position: relative;
+
+            span {
+                -webkit-border-radius: 1.0714rem;
+                height: 25px;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 25px;
+
+                &.funk {
+                    background: $fr-orange;
+                }
+
+                &.soul-rnb {
+                    background: $fr-lightblue;
+                }
+
+                &.reggae-ska {
+                    background: $fr-green;
+                }
+
+                &.northern-soul {
+                    background: $fr-lightyellow;
+                }
+
+                &.mod-beat-psych {
+                    background: $fr-pink;
+                }
+
+                &.jazz {
+                    background: $fr-red;
+                }
+
+                &.latin-boogaloo {
+                    background: $fr-brown;
+                }
+
+                &.motown {
+                    background: $fr-violet;
+                }
+
+                &.rocking-rnb {
+                    background: $fr-darkyellow;
+                }
+            }
+        }
     }
 }
