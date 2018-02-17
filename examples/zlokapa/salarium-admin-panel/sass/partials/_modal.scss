@@ -1,0 +1,109 @@
+/**
+ * @name Modal
+ * @author Zoran Zlokapa
+ */
+
+ .sl-c-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 200;
+
+    &.sl-is-active {
+        display: flex
+    }
+}
+
+.sl-c-modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: transparentize($sl-color-darkgrey, .25);
+}
+
+.sl-c-modal-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    max-width: 60rem;
+}
+
+.sl-c-modal-card--dialog {
+    width: 32.143rem;
+}
+
+.sl-c-modal-card__header,
+.sl-c-modal-card__footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: $sl-gutter;
+    background-color: $sl-color-white;
+}
+
+.sl-c-modal-card__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid $sl-color-silver;
+    border-top-left-radius: $sl-radius-sm;
+    border-top-right-radius: $sl-radius-sm;
+
+    .sl-c-actions {
+        position: static;
+    }
+}
+
+.sl-c-modal-card__title {
+    flex-grow: 1;
+    color: $sl-color-darkgrey;
+
+    &.sl-c-modal-card__title {
+        margin-bottom: 0;
+    }
+}
+
+.sl-c-modal-card__body {
+    flex-grow: 1;
+    padding: $sl-gutter;
+    overflow: auto;
+    max-height: 27.715rem;
+    -webkit-overflow-scrolling: touch;
+    background-color: $sl-color-white;
+
+    .sl-c-modal-card--dialog & {
+        padding-right: $sl-gutter-lg;
+        padding-left: $sl-gutter-lg;
+    }
+}
+
+.sl-c-modal-card__footer {
+    border-bottom-left-radius: $sl-radius-sm;
+    border-bottom-right-radius: $sl-radius-sm;
+
+    .sl-c-modal-card--dialog & {
+        justify-content: center;
+    }
+
+    .sl-c-btn:not(:last-child) {
+        margin-right: $sl-gutter-sm;
+    }
+}
+
+.sl-c-modal-card__footer-vertical {
+    flex-direction: column;
+    .sl-c-btn:not(:last-child) {
+        margin-bottom: $sl-gutter-sm;
+        margin-right: 0;
+    }
+}

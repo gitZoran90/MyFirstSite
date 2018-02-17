@@ -1,0 +1,163 @@
+/**
+ * @name Node tree
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-node-tree-wrapper {
+    overflow-y: auto;
+}
+
+.sl-c-node-tree {
+    position: relative;
+    list-style: none;
+
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 2rem;
+        height: 1rem;
+        background-color: $sl-color-white;
+        content: '';
+    }
+
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    li {
+        position: relative;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-left: $sl-gutter-xl;
+        padding-top: $sl-gutter;
+
+        &:before {
+            position: absolute;
+            top: 3rem;
+            left: 1.5rem;
+            height: 1px;
+            width: 3rem;
+            margin: auto;
+            border-bottom: 1px dotted $sl-color-grey;
+            content: '';
+        }
+
+        &:after {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 1.5rem;
+            width: 1px;
+            height: 100%;
+            border-left: 1px dotted $sl-color-grey;
+            content: '';
+        }
+
+        &:last-child {
+            &:after {
+                height: 3rem;
+            }
+        }
+    }
+
+    > li {
+        margin-left: 0;
+        padding-left: 0;
+    }
+
+    a {
+        cursor: pointer;
+    }
+}
+
+.sl-c-node-tree--wrap {
+    position: relative;
+    display: inline-block;
+
+    &:hover {
+        .sl-c-node-tree__actions {
+            .sl-c-btn-group {
+                display: inline-flex;
+            }
+        }
+    }
+
+    .sl-c-form-group {
+        width: 22rem;
+    }
+}
+
+.sl-c-node-tree__item {
+    position: relative;
+    z-index: 5;
+    display: inline-flex;
+    align-items: center;
+    padding: $sl-gutter;
+    min-width: 9rem;
+    max-width: 15rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background-color: $sl-color-silver;
+    border: 1px solid $sl-color-lightgrey;
+    border-radius: $sl-radius-xs;
+
+    &.sl-c-node-tree--dept {
+        background-color: $sl-color-lightblue;
+    }
+
+    &.sl-c-node-tree--pos {
+        background-color: $sl-color-silver;
+    }
+
+    .sl-c-icon {
+        flex: 0 0 auto;
+        margin-right: $sl-gutter;
+    }
+}
+
+.sl-c-node-tree__actions {
+    position: absolute;
+    bottom: -.9rem;
+    left: .6rem;
+    transform: none;
+    z-index: 5;
+    vertical-align: middle;
+
+    .sl-c-btn--xs {
+        padding: $sl-gutter-xs $sl-gutter-sm;
+    }
+
+    .sl-c-btn--link {
+        .sl-c-icon {
+            background-color: $sl-color-white;
+        }
+    }
+
+    .sl-c-btn-group {
+        display: none;
+    }
+}
+
+.sl-c-node-tree--horizontal {
+    > li {
+        display: inline-block;
+
+        &:not(:first-child) {
+            padding-left: $sl-gutter;
+
+            &:before {
+                left: 0;
+                width: 5rem;
+            }
+
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

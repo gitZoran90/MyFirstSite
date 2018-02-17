@@ -1,0 +1,95 @@
+/**
+ * @name Workflow pages
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-c-workflow-tree {
+    .sl-c-node-tree__item {
+        padding: $sl-gutter-sm $sl-gutter;
+
+        &.sl-c-node-tree--pos {
+            background-color: $sl-color-white;
+        }
+    }
+
+    .sl-c-node-tree--horizontal {
+        li {
+            &:before {
+                top: 2.5rem;
+            }
+
+            &:after {
+                height: 70%;
+            }
+        }
+    }
+}
+
+.sl-c-workflow-tree--add {
+    &.sl-c-node-tree {
+        li {
+            &:last-child {
+                :after {
+                    height: 4.5rem;
+                }
+            }
+        }
+    }
+
+    li {
+        &:last-child {
+            :after {
+                bottom: -1rem;
+            }
+        }
+    }
+
+    .sl-c-node-tree--horizontal {
+        li {
+            &:before {
+                top: 4.5rem;
+            }
+        }
+    }
+
+    .sl-c-node-tree__actions {
+        position: static;
+        display: inline-block;
+    }
+
+    .sl-c-actions--trigger {
+        &:hover {
+            .sl-c-actions--pop {
+                display: inline-block;
+            }
+        }
+    }
+
+    .sl-c-control-label {
+        min-height: 2rem;
+    }
+    
+    .sl-c-form-group {
+        &:hover {
+            .sl-c-actions--pop {
+                display: inline-block;
+            }
+        }
+
+        .sl-c-form-control {
+            max-height: 3rem;
+        }
+
+        li {
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+    }
+}

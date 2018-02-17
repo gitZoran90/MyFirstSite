@@ -1,0 +1,384 @@
+/**
+ * @name Buttons
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-btn {
+    display: inline-block;
+    padding: $sl-gutter $sl-gutter-lg;
+    color: $sl-color-darkgrey;
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: $sl-radius-lg;
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: all .2s ease-in-out;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.sl-is-active {
+        cursor: pointer;
+    }
+
+    &[disabled],
+    &.sl-is-disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+}
+
+.sl-c-btn--link {
+    color: $sl-color-blue;
+}
+
+.sl-c-btn--default {
+    background-color: $sl-color-silver;
+    border-color: $sl-color-lightgrey;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.sl-is-active {
+        background-color: lighten($sl-color-silver, 10%);
+    }
+
+    &[disabled],
+    &.sl-is-disabled {
+        color: $sl-color-lightgrey;
+        background-color: lighten($sl-color-silver, 15%);
+    }
+}
+
+.sl-c-btn--primary {
+    color: $sl-color-white;
+    background-color: $sl-color-green;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.sl-is-active {
+        background-color: lighten($sl-color-green, 10%);
+    }
+
+    &[disabled],
+    &.sl-is-disabled {
+        color: $sl-color-white;
+        background-color: lighten($sl-color-green, 15%);
+    }
+
+    &.sl-c-btn--ghost {
+        color: $sl-color-darkgrey;
+        border-color: $sl-color-green;
+        background-color: $sl-color-white;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.sl-is-active {
+            background-color: lighten($sl-color-green, 75%);
+        }
+
+        &[disabled],
+        &.sl-is-disabled {
+            color: $sl-color-lightgrey;
+            border-color: $sl-color-green;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.sl-c-btn--danger {
+    color: $sl-color-white;
+    background-color: $sl-color-red;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.sl-is-active {
+        background-color: lighten($sl-color-red, 10%);
+    }
+
+    &[disabled],
+    &.sl-is-disabled {
+        color: $sl-color-white;
+        background-color: lighten($sl-color-red, 15%);
+    }
+
+    &.sl-c-btn--ghost {
+        color: $sl-color-darkgrey;
+        border-color: $sl-color-red;
+        background-color: $sl-color-white;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.sl-is-active {
+            background-color: lighten($sl-color-red, 75%);
+        }
+
+        &[disabled],
+        &.sl-is-disabled {
+            color: $sl-color-lightgrey;
+            border-color: $sl-color-red;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.sl-c-btn--success {
+    color: $sl-color-white;
+    background-color: $sl-color-blue;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.sl-is-active {
+        background-color: lighten($sl-color-blue, 10%);
+    }
+
+    &[disabled],
+    &.sl-is-disabled {
+        color: $sl-color-white;
+        background-color: lighten($sl-color-blue, 15%);
+    }
+
+    &.sl-c-btn--ghost {
+        color: $sl-color-darkgrey;
+        border-color: $sl-color-blue;
+        background-color: $sl-color-white;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.sl-is-active {
+            background-color: lighten($sl-color-blue, 75%);
+        }
+
+        &[disabled],
+        &.sl-is-disabled {
+            color: $sl-color-lightgrey;
+            border-color: $sl-color-blue;
+
+            &:hover,
+            &:focus,
+            &:active {
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.sl-c-btn--ghost {
+    background-color: transparent;
+}
+
+.sl-c-btn--square {
+    border-radius: $sl-radius-xs;
+}
+
+.sl-c-btn--md {
+    padding: $sl-gutter-sm $sl-gutter-md;
+}
+
+.sl-c-btn--sm {
+    padding: $sl-gutter-xs $sl-gutter;
+    font-size: .9rem;
+}
+
+.sl-c-btn--xs {
+    padding: $sl-gutter-xs $sl-gutter;
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+.sl-c-btn--block {
+    display: block;
+    width: 100%;
+}
+
+.sl-c-btn--wide {
+    padding-right: $sl-gutter-xl;
+    padding-left: $sl-gutter-xl;
+}
+
+.sl-c-btn-group {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+
+    .sl-c-btn {
+        border-radius: 0;
+
+        &:first-child {
+            border-top-left-radius: $sl-radius-lg;
+            border-bottom-left-radius: $sl-radius-lg;
+        }
+        
+        &:last-child {
+            border-top-right-radius: $sl-radius-lg;
+            border-bottom-right-radius: $sl-radius-lg;
+        }
+
+        &.sl-c-btn--square {
+            &:first-child {
+                border-top-left-radius: $sl-radius-xs;
+                border-bottom-left-radius: $sl-radius-xs;
+            }
+            
+            &:last-child {
+                border-top-right-radius: $sl-radius-xs;
+                border-bottom-right-radius: $sl-radius-xs;
+            }
+        }
+    }
+
+    .sl-c-btn--default {
+        &.sl-c-btn--ghost {
+            &.sl-is-active {
+                color: $sl-color-white;
+                background-color: $sl-color-blue;
+            }
+        }
+    }
+}
+
+.sl-c-btn-group--two {
+    .sl-c-btn {
+        width: 50%;
+    }
+}
+
+.sl-c-btn-group--block {
+    width: 100%;
+
+    > .sl-c-btn {
+        flex-grow: 1;
+    }
+}
+
+.sl-u-actions {
+    .sl-c-btn {
+        margin-right: 2px;
+    }
+
+    .sl-c-btn-group {
+        display: inline-block;
+
+        .sl-c-btn {
+            margin-left: -2px;
+            margin-right: -2px;
+        }
+    }
+}
+
+.sl-c-btn-group--fancy {
+    width: 100%;
+
+    .sl-c-btn {
+        flex-grow: 1;
+        position: relative;
+        text-align: left;
+
+        strong {
+            display: block;
+        }
+    }
+
+    .sl-c-btn--default,
+    .sl-c-btn--primary,
+    .sl-c-btn--danger,
+    .sl-c-btn--success {
+        color: $sl-color-darkgrey;
+        border-color: $sl-color-lightergrey;
+        background-color: transparent;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &.sl-is-active {
+            color: $sl-color-white;
+
+            .sl-u-separator {
+                color: $sl-color-darkgrey;
+            }
+        }
+
+        &[disabled],
+        &.sl-is-disabled {
+            color: $sl-color-lightgrey;
+
+            &:hover,
+            &:focus,
+            &:active,
+            &.sl-is-active {
+                background-color: transparent;
+            }
+        }
+    }
+
+    .sl-c-btn--default {
+        &:hover,
+        &:focus,
+        &:active,
+        &.sl-is-active {
+            background-color: lighten($sl-color-silver, 10%);
+        }
+    }
+
+    .sl-c-btn--primary {
+        &:hover,
+        &:focus,
+        &:active,
+        &.sl-is-active {
+            background-color: lighten($sl-color-green, 10%);
+        }
+    }
+
+    .sl-c-btn--danger {
+        &:hover,
+        &:focus,
+        &:active,
+        &.sl-is-active {
+            background-color: lighten($sl-color-red, 10%);
+        }
+    }
+
+    .sl-c-btn--success {
+        &:hover,
+        &:focus,
+        &:active,
+        &.sl-is-active {
+            background-color: lighten($sl-color-blue, 10%);
+        }
+    }
+
+    .sl-u-separator {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: -1.5rem;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 3rem;
+        height: 3rem;
+        border: 1px solid $sl-color-lightergrey;
+        border-radius: $sl-radius-round;
+        background-color: $sl-color-white;
+    }
+}

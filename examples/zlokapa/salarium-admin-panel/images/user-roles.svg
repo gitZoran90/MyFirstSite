@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="59px" viewBox="0 0 76 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="role">
+            <g id="icon-active">
+                <path d="M70.0652174,12.004039 L70.0652174,12 L39.9347826,12 L39.9347826,12.004039 C36.6367785,12.1209394 34,14.7606896 34,18 C34,21.2393104 36.6367785,23.8790606 39.9347826,23.995961 L39.9347826,24 L70.0652174,24 L70.0652174,23.995961 C73.3632215,23.8790606 76,21.2393104 76,18 C76,14.7606896 73.3632215,12.1209394 70.0652174,12.004039 Z" id="Combined-Shape" fill-opacity="0.1" fill="#00A5E5"></path>
+                <path d="M36.0652174,32.004039 L36.0652174,32 L5.93478261,32 L5.93478261,32.004039 C2.63677847,32.1209394 0,34.7606896 0,38 C0,41.2393104 2.63677847,43.8790606 5.93478261,43.995961 L5.93478261,44 L36.0652174,44 L36.0652174,43.995961 C39.3632215,43.8790606 42,41.2393104 42,38 C42,34.7606896 39.3632215,32.1209394 36.0652174,32.004039 Z" id="Combined-Shape" fill-opacity="0.1" fill="#00A5E5"></path>
+                <path d="M38.3548387,58.5 C48.3152098,58.5 57.4052335,53.388439 62.6761531,45.1115178 C65.6210887,40.4870877 67.2096774,35.112319 67.2096774,29.5 C67.2096774,13.4831916 54.2903725,0.5 38.3548387,0.5 C22.419305,0.5 9.5,13.4831916 9.5,29.5 C9.5,45.5168084 22.419305,58.5 38.3548387,58.5 Z" id="Combined-Shape" stroke="#00A5E5"></path>
+                <g id="Group" transform="translate(21.000000, 7.000000)">
+                    <rect id="Rectangle-23" stroke="#00A5E5" x="0.5" y="0.5" width="33" height="45" rx="10"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="6" y="32" width="21" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="6" y="35" width="21" height="1" rx="0.5"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="6" y="39" width="21" height="1" rx="0.5"></rect>
+                    <path d="M0.5,31.4452847 L0.5,36 C0.5,41.2467051 4.75329488,45.5 10,45.5 L24,45.5 C29.2467051,45.5 33.5,41.2467051 33.5,36 L33.5,31.4452847 C29.5363429,26.4649153 23.5149057,23.5 17,23.5 C10.4850943,23.5 4.46365712,26.4649153 0.5,31.4452847 Z" id="Combined-Shape" stroke="#00A5E5"></path>
+                    <circle id="Oval-4" stroke="#00A5E5" cx="17" cy="16" r="7"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

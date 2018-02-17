@@ -1,0 +1,19 @@
+/**
+ * @name Auth pages specific styles
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-l-page--signup,
+.sl-l-page--login {
+    background-color: $sl-color-silver;
+
+    .sl-c-card {
+        margin-bottom: $sl-gutter-lg;
+        width: 30rem;
+    }
+}

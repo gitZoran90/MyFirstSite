@@ -1,0 +1,63 @@
+/**
+ * @name Flexbox grid
+ * @author Zoran Zlokapa
+ */
+
+%col--base {
+    padding: 0 $sl-gutter-sm $sl-gutter $sl-gutter-sm;
+    /* outline: 1px solid red; */
+}
+
+.sl-c-col--wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -$sl-gutter-sm;
+    margin-left: -$sl-gutter-sm;
+    list-style: none;
+}
+
+@for $i from 1 through 12 {
+    .sl-c-col--#{$i} {
+        @extend %col--base;
+        flex: 0 0 calc(#{100% * $i / 12});
+        width: calc(#{100% * $i / 12});
+    }
+}
+
+.sl-c-col--align-center {
+    align-items: center;
+}
+
+
+/**
+ * TODO: Legacy, remove asap
+ */
+
+.sl-c-row {
+    display: flex;
+    margin-right: -$sl-gutter;
+
+    > * {
+        flex-grow: 1;
+        margin-right: $sl-gutter;
+    }
+}
+
+.sl-c-grid {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        flex-grow: 1;
+    }
+}
+
+.sl-c-row--border-left {
+    [class*="sl-c-col--"] {
+        padding-bottom: 0;
+
+        &:not(:last-child) {
+            border-right: 1px solid $sl-color-grey;
+        }
+    }
+}

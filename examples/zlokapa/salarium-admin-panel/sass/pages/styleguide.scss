@@ -1,0 +1,41 @@
+/**
+ * @name Styleguide specific styles
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-l-page--styleguide {
+    background-color: $sl-color-white;
+}
+
+.sl-c-icon-list {
+    margin-right: -$sl-gutter-sm;
+    margin-left: -$sl-gutter-sm;
+
+    .sl-c-card {
+        flex-basis: 5rem;
+        margin: $sl-gutter-sm;
+        text-align: center;
+    }
+
+    .sl-c-card__body {
+        padding-top: $sl-gutter;
+    }
+}
+
+.sl-c-nav-holder {
+    position: relative;
+    min-height: 20rem;
+
+    .sl-l-app-header {
+        position: absolute;
+    }
+}
+
+.sl-l-popovers {
+    min-height: 40rem;
+}

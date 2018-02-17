@@ -1,0 +1,50 @@
+/**
+ * @name Auth pages specific styles
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-l-page--onboarding-index {
+    background-color: $sl-color-silver;
+
+    .sl-c-col--wrapper {
+        .sl-c-col--4 {
+            display: flex;
+            align-items: stretch;
+        }
+    }
+
+    .sl-c-section__header {
+        border-bottom: none;
+    }
+
+    .sl-c-icon-circled {
+        &.sl-is-done {
+            background-color: $sl-color-green;
+            border-color: $sl-color-green;
+            color: $sl-color-white;
+        }
+        &.sl-is-active {
+            border-color: $sl-color-green;
+            color: $sl-color-green;
+        }
+    }
+
+    .sl-c-card {
+        img {
+            max-width: 12rem;
+        }
+    }
+
+    .sl-c-card__body {
+        color: $sl-color-darkgrey;
+    }
+}
+
+.sl-c-user-roles {
+    padding: $sl-gutter;
+}

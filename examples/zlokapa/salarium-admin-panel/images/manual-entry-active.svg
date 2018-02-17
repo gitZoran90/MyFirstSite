@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="67px" viewBox="0 0 76 67" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="23 33 54 33 54 42 48.1835938 42 23 42"></polygon>
+        <rect id="path-2" x="23" y="45" width="14" height="9"></rect>
+        <rect id="path-3" x="40" y="45" width="14" height="9"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="toggle-2" transform="translate(-709.000000, -26.000000)">
+            <g id="toggle">
+                <g id="single-entry" transform="translate(709.000000, 26.000000)">
+                    <g id="icon">
+                        <path d="M61.0147622,1 L16.0147622,1 L16.0147622,12.4041844 L15.7380825,12.6940097 C10.1752704,18.5211221 7.01476217,26.2593234 7.01476217,34.5 C7.01476217,51.8980709 21.0472996,66 38.3548387,66 C49.1728227,66 59.0452408,60.4484779 64.770653,51.4578674 C67.9694808,46.4347505 69.6949153,40.5969834 69.6949153,34.5 C69.6949153,26.4173522 66.6551525,18.8159246 61.2816409,13.0234716 L61.0147622,12.7357859 L61.0147622,1 Z" id="Combined-Shape" stroke="#FFFFFF" stroke-width="2"></path>
+                        <rect id="Rectangle-3" fill="#FFFFFF" transform="translate(38.500000, 1.000000) rotate(90.000000) translate(-38.500000, -1.000000) " x="37.5" y="-22.5" width="2" height="47"></rect>
+                        <rect id="Rectangle-3" fill="#FFFFFF" x="15" y="2" width="2" height="54"></rect>
+                        <rect id="Rectangle-3" fill="#FFFFFF" x="60" y="2" width="2" height="54"></rect>
+                        <rect id="Rectangle-3" fill="#FFFFFF" transform="translate(38.500000, 1.000000) rotate(90.000000) translate(-38.500000, -1.000000) " x="37.5" y="-22.5" width="2" height="47"></rect>
+                        <rect id="Rectangle-3" fill="#FFFFFF" x="15" y="2" width="2" height="54"></rect>
+                        <rect id="Rectangle-3" fill="#FFFFFF" x="60" y="2" width="2" height="54"></rect>
+                        <path d="M70.0652174,17.004039 L70.0652174,17 L39.9347826,17 L39.9347826,17.004039 C36.6367785,17.1209394 34,19.7606896 34,23 C34,26.2393104 36.6367785,28.8790606 39.9347826,28.995961 L39.9347826,29 L70.0652174,29 L70.0652174,28.995961 C73.3632215,28.8790606 76,26.2393104 76,23 C76,19.7606896 73.3632215,17.1209394 70.0652174,17.004039 Z" id="Combined-Shape" fill-opacity="0.1" fill="#FFFFFF"></path>
+                        <path d="M36.0652174,37.004039 L36.0652174,37 L5.93478261,37 L5.93478261,37.004039 C2.63677847,37.1209394 0,39.7606896 0,43 C0,46.2393104 2.63677847,48.8790606 5.93478261,48.995961 L5.93478261,49 L36.0652174,49 L36.0652174,48.995961 C39.3632215,48.8790606 42,46.2393104 42,43 C42,39.7606896 39.3632215,37.1209394 36.0652174,37.004039 Z" id="Combined-Shape" fill-opacity="0.1" fill="#FFFFFF"></path>
+                        <rect id="Rectangle-2" fill="#FFFFFF" x="23" y="10" width="31" height="2"></rect>
+                        <rect id="Rectangle-2" fill="#FFFFFF" x="23" y="20.5" width="31" height="2"></rect>
+                        <rect id="Rectangle-2" fill="#FFFFFF" x="23" y="26.5" width="31" height="2"></rect>
+                        <rect id="Rectangle-2" fill="#FFFFFF" x="23" y="15" width="14" height="2"></rect>
+                        <rect id="Rectangle-2" fill="#FFFFFF" x="40" y="15" width="14" height="2"></rect>
+                        <g id="Rectangle-8">
+                            <use fill-opacity="0.2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <path stroke="#FFFFFF" stroke-width="2" d="M24,34 L24,41 L53,41 L53,34 L24,34 Z"></path>
+                        </g>
+                        <g id="Rectangle-8">
+                            <use fill-opacity="0.2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <rect stroke="#FFFFFF" stroke-width="2" x="24" y="46" width="12" height="7"></rect>
+                        </g>
+                        <g id="Rectangle-8">
+                            <use fill-opacity="0.2" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <rect stroke="#FFFFFF" stroke-width="2" x="41" y="46" width="12" height="7"></rect>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

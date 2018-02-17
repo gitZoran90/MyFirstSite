@@ -1,0 +1,46 @@
+/**
+ * @name Cards
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-card {
+    display: flex;
+    flex-direction: column;
+    background-color: $sl-color-white;
+    box-shadow: 0 0 2rem 0 $sl-color-grey;
+}
+
+.sl-c-card__header,
+.sl-c-card__body,
+.sl-c-card__footer {
+    padding-right: $sl-gutter-lg;
+    padding-left: $sl-gutter-lg;
+}
+
+.sl-c-card__header {
+    padding-top: $sl-gutter-lg;
+    padding-bottom: $sl-gutter;
+
+    + .sl-c-card__body {
+        padding-top: $sl-gutter;
+    }
+}
+
+.sl-c-card__body {
+    flex-grow: 1;
+    padding-top: $sl-gutter-lg;
+    padding-bottom: $sl-gutter;
+
+    + .sl-c-card__footer {
+        padding-top: $sl-gutter;
+    }
+}
+
+.sl-c-card__footer {
+    padding-bottom: $sl-gutter-lg;
+}
+
+.sl-c-card--blank {
+    background-color: transparent;
+    box-shadow: none;
+}

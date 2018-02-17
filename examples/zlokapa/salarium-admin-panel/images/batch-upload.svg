@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="76px" height="65px" viewBox="0 0 76 65" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="43" y="37" width="8" height="8"></rect>
+        <rect id="path-2" x="55" y="31" width="7" height="8"></rect>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="toggle-2" transform="translate(-127.000000, -29.000000)">
+            <g id="toggle">
+                <g id="batch-upload" transform="translate(127.000000, 29.000000)">
+                    <g id="icon">
+                        <path d="M66.9858827,9 L59.4823127,9 L59.1997977,8.75349372 C53.5043225,3.78395107 46.2226186,1 38.5069517,1 C25.2906045,1 13.619215,9.21842448 9.03094067,21.3830945 L8.78687155,22.0301831 L5,22.0301831 L5,27 L3,27 L3,53 L14.5907049,53 L14.8892649,53.3382642 C20.832035,60.0713373 29.3509176,64 38.5069517,64 C49.3788719,64 59.2998897,58.4474133 65.0528567,49.4560635 C68.2666016,44.4332805 70,38.5961784 70,32.5 C70,27.8540722 68.9943856,23.3524733 67.0790999,19.2330331 L66.9858827,19.0325394 L66.9858827,9 Z M7.4113622,20.0301831 L8.09528391,20.0301831 L7.15962714,20.6772718 C7.24143209,20.4603863 7.32535406,20.2446804 7.41136529,20.0301754 Z" id="Combined-Shape" stroke="#00A5E5" stroke-width="2"></path>
+                        <path d="M70.0652174,15.004039 L70.0652174,15 L39.9347826,15 L39.9347826,15.004039 C36.6367785,15.1209394 34,17.7606896 34,21 C34,24.2393104 36.6367785,26.8790606 39.9347826,26.995961 L39.9347826,27 L70.0652174,27 L70.0652174,26.995961 C73.3632215,26.8790606 76,24.2393104 76,21 C76,17.7606896 73.3632215,15.1209394 70.0652174,15.004039 Z" id="Combined-Shape" fill-opacity="0.1" fill="#00A5E5"></path>
+                        <path d="M36,47 L6.00000958,47 C2.6862915,47 0,44.3137085 0,41 C0,37.6862915 2.6862915,35 6,35 L36,35 C39.3137085,35 42,37.6862915 42,41 C42,44.3137085 39.3137085,47 36,47 Z" id="Combined-Shape" fill-opacity="0.1" fill="#00A5E5"></path>
+                        <rect id="Rectangle-9" fill="#00A5E5" x="2" y="26" width="2" height="28"></rect>
+                        <rect id="Rectangle-9" fill="#00A5E5" x="43" y="26" width="2" height="28"></rect>
+                        <rect id="Rectangle-10" fill="#00A5E5" x="3" y="52" width="41" height="2"></rect>
+                        <rect id="Rectangle-10" fill="#00A5E5" x="3" y="26" width="41" height="2"></rect>
+                        <rect id="Rectangle-11" fill="#00A5E5" x="4" y="23.0027119" width="2" height="2.99728814"></rect>
+                        <rect id="Rectangle-12" fill="#00A5E5" x="4" y="21" width="22" height="2"></rect>
+                        <rect id="Rectangle-11" fill="#00A5E5" x="24" y="22" width="2" height="4"></rect>
+                        <rect id="Rectangle-15" fill="#00A5E5" x="34" y="26" width="17" height="2"></rect>
+                        <rect id="Rectangle-15" fill="#00A5E5" x="34" y="20" width="17" height="2"></rect>
+                        <rect id="Rectangle-15" fill="#00A5E5" x="43" y="32" width="8" height="2"></rect>
+                        <g id="Rectangle-16">
+                            <use fill="#E5F6FC" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#00A5E5" stroke-width="2" x="44" y="38" width="6" height="6"></rect>
+                        </g>
+                        <rect id="Rectangle-14" fill="#00A5E5" x="44" y="48" width="11" height="2"></rect>
+                        <rect id="Rectangle-14" fill="#00A5E5" x="29" y="14" width="28" height="2"></rect>
+                        <rect id="Rectangle-13" fill="#00A5E5" x="28" y="14" width="2" height="12"></rect>
+                        <rect id="Rectangle-13" fill="#00A5E5" x="55" y="14" width="2" height="36"></rect>
+                        <rect id="Rectangle-15" fill="#00A5E5" x="56" y="20" width="6" height="2"></rect>
+                        <rect id="Rectangle-15" fill="#00A5E5" x="56" y="14" width="6" height="2"></rect>
+                        <rect id="Rectangle-15" fill="#00A5E5" x="55" y="26" width="7" height="2"></rect>
+                        <g id="Rectangle-16">
+                            <use fill="#E5F6FC" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <rect stroke="#00A5E5" stroke-width="2" x="56" y="32" width="5" height="6"></rect>
+                        </g>
+                        <rect id="Rectangle-14" fill="#00A5E5" x="55" y="42" width="11" height="2"></rect>
+                        <rect id="Rectangle-14" fill="#00A5E5" x="40" y="8" width="28" height="2"></rect>
+                        <rect id="Rectangle-13" fill="#00A5E5" x="39" y="8" width="2" height="8"></rect>
+                        <rect id="Rectangle-13" fill="#00A5E5" x="66" y="8" width="2" height="36"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

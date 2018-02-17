@@ -1,0 +1,12 @@
+/*
+ * @name Mixins
+ * @author Zoran Zlokapa
+ */
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

@@ -1,0 +1,33 @@
+/**
+ * @name Create Company
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-l-page--create-company {
+    .sl-l-app-content {
+        padding-bottom: 0;
+    }
+
+    .sl-c-tooltip-btn {
+        .sl-c-icon-circle {
+            background-color: $sl-color-lightblue;
+            color: $sl-color-blue;
+        }
+    }
+}
+
+.sl-c-create-company-form {
+    .sl-c-section__header {
+        border-bottom: none;
+
+        .sl-c-badge {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+}

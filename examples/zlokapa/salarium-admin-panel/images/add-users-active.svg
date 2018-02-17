@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="167px" height="130px" viewBox="0 0 167 130" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>icon active</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Onboarding" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-637.000000, -373.000000)" id="users">
+            <g transform="translate(535.000000, 321.000000)">
+                <g id="icon-active" transform="translate(102.000000, 52.000000)">
+                    <path d="M154,25.0090877 L154,25 L88,25 L88,25.0090877 C80.7758005,25.2721137 75,31.2115516 75,38.5 C75,45.7884484 80.7758005,51.7278863 88,51.9909123 L88,52 L154,52 L154,51.9909123 C161.2242,51.7278863 167,45.7884484 167,38.5 C167,31.2115516 161.2242,25.2721137 154,25.0090877 Z" id="Combined-Shape" fill-opacity="0.1" fill="#A7A7A7"></path>
+                    <path d="M79,70.0090877 L79,70 L13,70 L13,70.0090877 C5.77580047,70.2721137 0,76.2115516 0,83.5 C0,90.7884484 5.77580047,96.7278863 13,96.9909123 L13,97 L79,97 L79,96.9909123 C86.2241995,96.7278863 92,90.7884484 92,83.5 C92,76.2115516 86.2241995,70.2721137 79,70.0090877 Z" id="Combined-Shape" fill-opacity="0.1" fill="#A7A7A7"></path>
+                    <path d="M135.930251,102.414753 L136.229605,102 L151,102 C155.970563,102 160,97.9705627 160,93 L160,13 C160,8.02943725 155.970563,4 151,4 L103.423162,4 L103.276306,3.95367273 C97.0944599,2.00354484 90.6154622,1 84,1 C63.1756651,1 44.0294394,11.0151833 32.0697491,27.5852468 L31.7703948,28 L16,28 C11.0294373,28 7,32.0294373 7,37 L7,117 C7,121.970563 11.0294373,126 16,126 L64.5768382,126 L64.7236942,126.046327 C70.9055401,127.996455 77.3845378,129 84,129 C104.824335,129 123.970561,118.984817 135.930251,102.414753 Z" id="Combined-Shape" stroke="#A7A7A7" stroke-width="2"></path>
+                    <rect id="Rectangle-23" stroke="#00A5E5" stroke-width="2" x="7" y="28" width="73" height="98" rx="10"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="21" y="97" width="46" height="2" rx="1"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="21" y="104" width="46" height="2" rx="1"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="21" y="111" width="46" height="2" rx="1"></rect>
+                    <path d="M7,94.6871314 L7,117 C7,121.970563 11.0294373,126 16,126 L71,126 C75.9705627,126 80,121.970563 80,117 L80,94.6871314 C71.2373922,83.6007196 57.9147393,77 43.5,77 C29.0852607,77 15.7626078,83.6007196 7,94.6871314 Z" id="Combined-Shape" stroke="#00A5E5" stroke-width="2"></path>
+                    <circle id="Oval-4" stroke="#00A5E5" stroke-width="2" cx="43.5" cy="61.5" r="15.5"></circle>
+                    <rect id="Rectangle-23" stroke="#00A5E5" stroke-width="2" x="87" y="4" width="73" height="98" rx="10"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="101" y="73" width="46" height="2" rx="1"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="101" y="80" width="46" height="2" rx="1"></rect>
+                    <rect id="Rectangle-24" fill="#00A5E5" x="101" y="87" width="46" height="2" rx="1"></rect>
+                    <path d="M87,70.6871314 L87,93 C87,97.9705627 91.0294373,102 96,102 L151,102 C155.970563,102 160,97.9705627 160,93 L160,70.6871314 C151.237392,59.6007196 137.914739,53 123.5,53 C109.085261,53 95.7626078,59.6007196 87,70.6871314 Z" id="Combined-Shape" stroke="#00A5E5" stroke-width="2"></path>
+                    <circle id="Oval-4" stroke="#00A5E5" stroke-width="2" cx="123.5" cy="37.5" r="15.5"></circle>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,62 @@
+/**
+ * @name User list and Add user form
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-user-list {
+    > div {
+        margin-bottom: $sl-gutter;
+    }
+
+    .sl-c-col--wrapper {
+        width: 100%;
+
+        &:not(.sl-c-new-user-form) {
+            > div {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &.sl-c-edit-user {
+            > div {
+                display: block;
+            }
+        }
+
+        .sl-c-form-group {
+            width: 100%;
+        }
+    }
+
+    .sl-u-text--ellipsis {
+        max-width: 10rem;
+
+        @media (min-width: 1440px) {
+            max-width: 18rem;
+        }
+
+        @media (min-width: 1680px) {
+            max-width: 21rem;
+        }
+    }
+}
+
+.sl-c-new-user-form {
+    width: 100%;
+}
+
+.sl-c-add-new-user,
+.sl-c-user-list {
+    [class^="sl-c-col--"] {
+        margin-bottom: 0;
+    }
+}
+
+.sl-c-add-new-user,
+.sl-c-edit-user,
+.sl-c-add-new-department {
+    .sl-c-form__actions {
+        padding-top: $sl-gutter-lg;
+    }
+}

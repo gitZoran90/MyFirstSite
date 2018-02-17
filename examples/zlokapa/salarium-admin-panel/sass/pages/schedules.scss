@@ -1,0 +1,57 @@
+/**
+ * @name Schedule pages specific styles
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-l-schedules {
+    .sl-c-col--wrapper {
+        width: 100%;
+    }
+
+    .sl-l-page-content-wrap {
+        .sl-l-app-nav {
+            + div {
+                display: flex;
+                flex-direction: column;
+                flex-grow: 1;
+            }
+        }
+    }
+
+    .sl-l-app-content {
+        .sl-c-btn-group {
+            .sl-c-btn {
+                width: 50%;
+            }
+        }
+    }
+
+    .sl-c-table-header {
+        flex-wrap: wrap;
+
+        .sl-c-btn-group {
+            width: auto;
+
+            .sl-c-btn {
+                width: auto;
+            }
+        }
+
+        .sl-c-panel {
+            width: 100%;
+            margin-top: $sl-gutter;
+        }
+    }
+
+    .sl-c-panel-dropdown {
+        &:before,
+        &:after {
+            right: 17.5rem;
+        }
+    }
+}

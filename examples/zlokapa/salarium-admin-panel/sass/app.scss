@@ -1,0 +1,49 @@
+/**
+ * @name Salarium Styleguide
+ * @author Zoran Zlokapa
+ */
+
+/********************************************************************************
+ = 0. Table of Content
+   1. Variables
+   2. Mixins
+   3. Helper classes
+   4. HTML Setup
+   5. Typography
+   6. Layout
+   7. Modules
+   8. Shame CSS
+ ********************************************************************************/
+
+@import
+    "helpers/variables",
+    "helpers/mixins",
+    "base/base",
+    "base/typography",
+    "helpers/helpers",
+    "partials/modal",
+    "partials/page-loader",
+    "partials/animations",
+    "partials/grid",
+    "partials/buttons",
+    "partials/user-list",
+    "partials/badges",
+    "partials/steps",
+    "partials/icons",
+    "partials/progress-bar",
+    "partials/tooltips",
+    "partials/popovers",
+    "partials/tables",
+    "partials/forms",
+    "partials/alerts",
+    "partials/node-tree",
+    "partials/dropdown",
+    "partials/panels",
+    "partials/cards",
+    "partials/labels",
+    "partials/media",
+    "partials/calendar",
+    "partials/components",
+    "partials/plugins",
+    "partials/layout"
+;

@@ -1,0 +1,73 @@
+/**
+ * @name Steps
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-steps {
+    display: flex;
+    justify-content: space-between;
+
+    > a {
+        display: flex;
+        flex-grow: 1;
+        align-items: center;
+        padding-bottom: $sl-gutter;
+        color: $sl-color-darkgrey;
+        line-height: 1.4;
+        font-size: .9rem;
+        border-bottom: 1px solid $sl-color-darkgrey;
+
+        &:not(:last-child) {
+            margin-right: $sl-gutter-md;
+        }
+
+        &:hover,
+        &:focus {
+            color: $sl-color-blue;
+            border-bottom-color: $sl-color-blue;
+
+            .sl-c-badge {
+                color: $sl-color-blue;
+                border-color: $sl-color-blue;
+            }
+        }
+    }
+
+    .finished {
+        color: $sl-color-blue;
+        border-bottom-color: $sl-color-blue;
+
+        &:hover {
+            .sl-c-badge {
+                color: $sl-color-white;
+            }
+        }
+
+        .sl-c-badge {
+            color: $sl-color-white;
+            background-color: $sl-color-blue;
+            border-color: $sl-color-blue;
+        }
+    }
+
+    .active {
+        color: $sl-color-blue;
+        border-bottom-color: $sl-color-blue;
+
+        .sl-c-badge {
+            color: $sl-color-blue;
+            border-color: $sl-color-blue;
+        }
+    }
+
+    .sl-c-badge {
+        width: 2.25rem;
+        height: 2.25rem;
+        margin-right: $sl-gutter;
+        color: $sl-color-darkgrey;
+    }
+
+    .sl-c-badge--info {
+        color: $sl-color-blue;
+    }
+}

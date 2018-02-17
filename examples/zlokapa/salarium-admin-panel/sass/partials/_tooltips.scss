@@ -1,0 +1,30 @@
+/**
+ * @name Tooltips bar
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-tooltip {
+    position: relative;
+    z-index: 100;
+    margin-left: $sl-gutter-xs;
+    padding-left: 8px;
+    filter: drop-shadow(0 0 .1rem $sl-color-darkgrey);
+
+    .tooltip-arrow {
+        position: absolute;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.5px 8px 7.5px 0;
+        border-color: transparent $sl-color-white transparent transparent;
+    }
+
+    .tooltip-inner {
+        max-width: 15rem;
+        padding: $sl-gutter-xs $sl-gutter;
+        font-size: .8rem;
+        background-color: $sl-color-white;
+        border-radius: $sl-radius-xs;
+    }
+}

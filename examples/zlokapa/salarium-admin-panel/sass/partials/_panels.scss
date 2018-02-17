@@ -1,0 +1,89 @@
+/**
+ * @name Panels
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-panel {
+    margin-bottom: $sl-gutter-lg;
+    border: 1px solid transparent;
+    border-radius: $sl-radius-sm;
+}
+
+.sl-c-panel__header,
+.sl-c-panel__footer {
+    padding: $sl-gutter;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $sl-color-grey;
+
+    .sl-c-actions {
+        position: static;
+    }
+}
+
+.sl-c-panel__title {
+    flex-grow: 1;
+
+    &:not(:last-child) {
+        margin-bottom: 0;
+    }
+}
+
+.sl-c-panel__body {
+    padding: $sl-gutter;
+}
+
+.sl-c-panel__footer {
+    margin-top: $sl-gutter;
+    padding-top: $sl-gutter;
+    border-top: 1px solid $sl-color-grey;
+    border-bottom: none;
+}
+
+.sl-c-panel-dropdown {
+    position: relative;
+    z-index: 10;
+
+    &:before,
+    &:after {
+        position: absolute;
+        right: 10rem;
+        top: -.75rem;
+        z-index: 1;
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 .75rem .75rem .75rem;
+        border-color: transparent transparent $sl-color-grey transparent;
+        content: '';
+    }
+
+    &:after {
+        top: -.65rem;
+        right: 10rem;
+        z-index: 2;
+        border-width: 0 .74rem .74rem .74rem;
+        border-color: transparent transparent $sl-color-white transparent;
+    }
+}
+
+.sl-c-panel--default {
+    border-color: $sl-color-grey;
+}
+
+.sl-c-panel--info {
+    background-color: $sl-color-lightblue;
+    border-color: transparentize($sl-color-blue, .9);
+}
+
+.sl-c-panel--muted {
+    > .sl-c-panel__header {
+        background-color: $sl-color-darksilver;
+        border-bottom-color: transparent;
+    }
+
+    > .sl-c-panel__body {
+        background-color: $sl-color-lightergrey;
+    }
+}

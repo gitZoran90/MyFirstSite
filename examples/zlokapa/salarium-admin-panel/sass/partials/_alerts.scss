@@ -1,0 +1,124 @@
+/**
+* @name Flash messages
+* @author Zoran Zlokapa
+*/
+
+.sl-c-alert-list {
+    position: fixed;
+    right: $sl-gutter-lg;
+    top: $sl-gutter-lg;
+    z-index:9999;
+
+    .sl-c-alert {
+        &:not(:first-child) {
+            margin-top: $sl-gutter-sm;
+        }
+    }
+}
+
+.sl-c-alert {
+    position: relative;
+    padding: $sl-gutter-sm $sl-gutter-xl $sl-gutter-sm $sl-gutter;
+    color: $sl-color-darkgrey;
+    background-color: $sl-color-silver;
+
+    .sl-c-actions--right-top {
+        top: .3rem;
+    }
+}
+
+.sl-c-alert--success {
+    color: $sl-color-white;
+    background-color: $sl-color-green;
+
+    a,
+    .sl-c-btn--link {
+        color: $sl-color-white;
+    }
+}
+
+.sl-c-alert--error,
+.sl-c-alert--danger,
+.sl-c-alert--warning {
+    color: $sl-color-white;
+    background-color: $sl-color-red;
+
+    a {
+        color: $sl-color-lightred;
+    }
+
+    .sl-c-btn--link {
+        color: $sl-color-white;
+    }
+}
+
+.sl-c-alert--info {
+    color: $sl-color-blue;
+    background-color: $sl-color-lightblue;
+
+    a,
+    .sl-c-btn--link {
+        color: $sl-color-blue;
+    }
+}
+
+
+/**
+* =Fade transition styles
+*/
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+
+/* .fade-leave-active in <2.1.8 */
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+
+/**
+* =Bounce transition styles
+*/
+
+.bounce-enter-active {
+    animation: bounce-in .5s;
+}
+
+.bounce-leave-active {
+    animation: bounce-in .5s reverse;
+}
+
+@keyframes bounce-in {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+/**
+* =Slide transition styles
+*/
+
+.slide-fade-enter-active {
+    transition: all .3s ease;
+}
+
+.slide-fade-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+/* .slide-fade-leave-active for <2.1.8 */
+.slide-fade-enter,
+.slide-fade-leave-to {
+    transform: translateX(10px);
+    opacity: 0;
+}

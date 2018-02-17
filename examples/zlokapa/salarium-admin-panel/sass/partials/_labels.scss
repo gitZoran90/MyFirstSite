@@ -1,0 +1,41 @@
+/**
+ * @name Labels
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-label {
+    display: inline-block;
+    padding: $sl-gutter-xs $sl-gutter-sm;
+    color: $sl-color-darkgrey;
+    font-size: .8rem;
+    line-height: 1.6;
+    text-decoration: none;
+    vertical-align: middle;
+    border-radius: $sl-radius;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+.sl-c-label--default {
+    background-color: $sl-color-silver;
+    border-color: $sl-color-grey;
+}
+
+.sl-c-label--primary {
+    color: $sl-color-white;
+    background-color: $sl-color-green;
+}
+
+.sl-c-label--danger {
+    color: $sl-color-white;
+    background-color: $sl-color-red;
+}
+
+.sl-c-label--success {
+    color: $sl-color-white;
+    background-color: $sl-color-blue;
+}
+
+.sl-c-label--ghost {
+    background-color: transparent;
+}

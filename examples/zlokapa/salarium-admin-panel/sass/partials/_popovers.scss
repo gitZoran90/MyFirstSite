@@ -1,0 +1,72 @@
+/**
+ * @name Popovers
+ * @author Zoran Zlokapa
+ */
+
+ .sl-c-popover {
+    position: absolute;
+    padding: $sl-gutter;
+    filter: drop-shadow(0 0 .1rem $sl-color-darkgrey);
+    background-color: $sl-color-white;
+    border-radius: $sl-radius-sm;
+    width: 27rem;
+    z-index: 20;
+
+    &:before {
+        position: absolute;
+        left: -8px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7.5px 8px 7.5px 0;
+        border-color: transparent $sl-color-white transparent transparent;
+        content: '';
+    }
+}
+
+.sl-c-popover--left {
+    &:before {
+        right: -8px;
+        left: auto;
+        border-width: 7.5px 0 7.5px 8px;
+        border-color: transparent transparent transparent $sl-color-white;
+    }
+}
+
+.sl-c-popover__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: $sl-gutter;
+    padding-bottom: $sl-gutter;
+    border-bottom: 1px solid $sl-color-grey;
+
+    .sl-c-actions {
+        position: relative;
+    }
+}
+
+.sl-c-popover__title {
+    font-family: 'sourcesanspro-bold', sans-serif;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+
+    &.sl-c-popover__title {
+        margin-bottom: 0;
+    }
+}
+
+.sl-c-popover__body {
+    +.sl-c-popover__footer {
+        margin-top: $sl-gutter;
+    }
+}
+
+.sl-c-popover__footer {
+    display: flex;
+    justify-content: flex-end;
+}

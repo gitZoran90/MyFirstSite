@@ -1,0 +1,66 @@
+/**
+ * @name Setup Company
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-l-page--setup-company {
+    background-color: $sl-color-white;
+
+    .sl-l-app-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        > main {
+            flex-grow: 1;
+        }
+
+        > .sl-u-container {
+            width: 100%;
+        }
+    }
+}
+
+.sl-l-departments,
+.sl-l-positions {
+    .sl-c-col--wrapper {
+        width: 100%;
+    }
+}
+
+.sl-l-time-attendance {
+    .sl-c-section__header {
+        border-bottom: none;
+
+        .sl-c-badge {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+}
+
+.sl-l-time-attendance,
+.sl-l-personal-information {
+    .sl-c-upload-area {
+        .sl-c-btn {
+            min-width: 12rem;
+        }
+    }
+}
+
+.sl-l-time-attendance {
+    .sl-c-upload-area {
+        align-items: stretch;
+    }
+
+    .sl-c-upload-area__wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}

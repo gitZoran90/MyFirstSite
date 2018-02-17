@@ -1,0 +1,56 @@
+/**
+ * @name Global variables
+ * @author Zoran Zlokapa
+ */
+
+
+/* Colors */
+
+$sl-color-blue:          #00A5E5;
+$sl-color-darkblue:      #02688F;
+$sl-color-lightdarkblue: #0077A5;
+$sl-color-lightblue:     #E5F6FC;
+$sl-color-silver:        #F0F4F6;
+$sl-color-lightsilver:   lighten($sl-color-silver, 3%);
+$sl-color-darksilver:    darken($sl-color-silver, 10%);
+$sl-color-darkgrey:      #474747;
+$sl-color-lightgrey:     #ADADAD;
+$sl-color-lightergrey:   #F6F6F6;
+$sl-color-green:         #83D24B;
+$sl-color-red:           #EB7575;
+$sl-color-lightred:      lighten($sl-color-red, 20%);
+
+$sl-color-white:         #ffffff;
+$sl-color-grey:          #cccccc;
+
+$sl-color-silver-transparent: transparentize($sl-color-silver, .5);
+
+
+/* Screens */
+
+$sl-screen-xs:   480px;
+$sl-screen-sm:   768px;
+$sl-screen-md:  1024px;
+$sl-screen-lg:  1280px;
+$sl-screen-xl:  1440px;
+$sl-screen-xxl: 1600px;
+
+
+/* Radius */
+
+$sl-radius:              1rem;
+$sl-radius-xs: $sl-radius*.25;
+$sl-radius-sm:  $sl-radius*.5;
+$sl-radius-lg:   $sl-radius*2;
+$sl-radius-round:         50%;
+
+
+/* Spacings */
+
+$sl-gutter:                1rem;
+$sl-gutter-xxs: $sl-gutter*.075;
+$sl-gutter-xs:   $sl-gutter*.25;
+$sl-gutter-sm:    $sl-gutter*.5;
+$sl-gutter-md:   $sl-gutter*1.5;
+$sl-gutter-lg:     $sl-gutter*2;
+$sl-gutter-xl:     $sl-gutter*4;

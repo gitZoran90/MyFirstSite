@@ -1,0 +1,27 @@
+/**
+ * @name Company Settings and Details
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-l-page--company-details {
+    .sl-l-app-content {
+        flex-grow: 0;
+        padding-bottom: $sl-gutter-lg;
+    }
+
+    .sl-c-create-company-form {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        > .sl-u-container {
+            flex-grow: 1;
+            width: 100%;
+        }
+    }
+}

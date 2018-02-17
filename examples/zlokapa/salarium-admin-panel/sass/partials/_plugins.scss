@@ -1,0 +1,313 @@
+/**
+ * @name Plugins modifications
+ * @author Zoran Zlokapa
+ */
+
+ @import
+    "~fullcalendar/dist/fullcalendar.css",
+    '~vue-multiselect/dist/vue-multiselect.min.css'
+;
+
+ .multiselect__content-wrapper {
+    z-index: 20;
+}
+
+.multiselect {
+    min-height: 3rem;
+
+    &.multiselect--disabled {
+        cursor: not-allowed;
+    }
+}
+
+.multiselect__element {
+    .sl-c-node-tree & {
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
+
+.multiselect__select {
+    min-height: calc(3rem - 2px);
+
+    .multiselect--disabled & {
+        background-color: $sl-color-lightergrey;
+    }
+}
+
+.multiselect__input,
+.multiselect__single {
+    margin-bottom: 0;
+    background-color: transparent;
+}
+
+.multiselect__single {
+    display: inline-flex;
+    align-items: center;
+}
+
+.multiselect__tags {
+    display: flex;
+    min-height: 3rem;
+    padding-top: $sl-gutter-xs;
+    padding-bottom: $sl-gutter-xs;
+    border-radius: 0;
+    border-color: $sl-color-darkgrey;
+
+    .multiselect--disabled & {
+        background-color: $sl-color-lightergrey;
+    }
+}
+
+.multiselect__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: $sl-gutter-xs $sl-gutter-sm;
+    font-size: .9rem;
+    color: $sl-color-darkgrey;
+    background-color: transparent;
+    border-radius: $sl-radius-lg;
+    border: 1px solid $sl-color-grey;
+}
+
+.multiselect__tag-icon {
+    position: static;
+    color: $sl-color-white;
+    border-radius: $sl-radius-round;
+    background-color: $sl-color-silver;
+
+    &:hover {
+        background-color: $sl-color-silver;
+        color: $sl-color-darkgrey;
+    }
+}
+
+.multiselect__option {
+    &.multiselect__option--highlight {
+        .sl-c-node-tree li & {
+            &:after {
+                height: auto;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.multiselect--active {
+    .sl-c-node-tree & {
+        z-index: 30;
+    }
+}
+
+.multiselect__option--highlight {
+    color: $sl-color-darkgrey;
+    background-color: $sl-color-silver;
+
+    &:after {
+        color: $sl-color-darkgrey;
+        background-color: $sl-color-silver;
+    }
+
+    &.multiselect__option--selected {
+        color: $sl-color-darkgrey;
+        background-color: $sl-color-silver;
+
+        &:after {
+            color: $sl-color-darkgrey;
+            background-color: $sl-color-silver;
+        }
+    }
+}
+
+.multiselect__spinner {
+    .sl-c-node-tree & {
+        &:after {
+            display: none;
+        }
+    }
+}
+
+.multiselect__select--search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:before {
+        display: none;
+    }
+
+    .multiselect--active & {
+        transform: rotate(0deg);
+    }
+}
+
+.multiselect--disabled {
+    border-color: $sl-color-lightgrey;
+    background-color: $sl-color-lightergrey;
+}
+
+.multiselect__clear {
+    position: absolute;
+    right: 2.5rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    display: block;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.multiselect__clear:before,
+.multiselect__clear:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 3px;
+    height: 1rem;
+    background: #aaa;
+    top: 1rem;
+    right: 4px;
+}
+
+.multiselect__clear:before {
+    transform: rotate(45deg);
+}
+
+.multiselect__clear:after {
+    transform: rotate(-45deg);
+}
+
+.sl-c-add-schedule-btn {
+    padding: 0;
+    border-radius: $sl-radius-sm;
+}
+
+.sl-c-calendar {
+    .fc-view {
+        z-index: 0;
+    }
+
+    .fc-agendaDay-view {
+        .fc-time-grid-event.fc-v-event.fc-event {
+            margin-right: 5px;
+            margin-top: 1px;
+            padding: .25rem;
+            border: none;
+        }
+    }
+
+    .fc-agendaWeek-view {
+        .fc-time-grid-event.fc-v-event.fc-event {
+            margin-right: 2px;
+            margin-top: 1px;
+            padding: .25rem;
+            border: none;
+        }
+    }
+
+    .fc-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0;
+        padding: $sl-gutter;
+        border: 1px solid $sl-color-grey;
+        border-bottom: none;
+
+        > * {
+            display: flex;
+            align-items: center;
+        }
+
+        > .fc-left {
+            justify-content: flex-start;
+            flex-grow: 1;
+
+            h2 {
+                flex-grow: 1;
+                text-align: left;
+                font-size: 1.5rem;
+            }
+        }
+
+        .fc-state-active {
+            z-index: 0;
+        }
+
+        .fc-button-group {
+            .fc-button {
+                border-radius: 0;
+            }
+
+            .fc-state-default {
+                &.fc-corner-right {
+                    border-radius: 0 $sl-radius-xs $sl-radius-xs 0;
+                }
+
+                &.fc-corner-left {
+                    border-radius: $sl-radius-xs 0 0 $sl-radius-xs;
+                }
+            }
+        }
+    }
+
+    td {
+        &.fc-today {
+            background-color: $sl-color-silver;
+        }
+    }
+
+    .fc-day-header {
+        background-color: $sl-color-silver;
+    }
+
+    .fc-widget-header {
+        thead {
+            th {
+                &.fc-axis {
+                    background-image: url(../icons/clock.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: .9rem .9rem;
+                }
+            }
+        }
+    }
+
+    .fc-state-default {
+        text-shadow: none;
+        background-color: transparent;
+        background-image: none;
+        border-color: $sl-color-grey;
+        box-shadow: none;
+
+        &.fc-state-active {
+            color: $sl-color-white;
+            background-color: $sl-color-blue;
+        }
+    }
+
+    span.fc-day-number {
+        float: left !important;
+        padding: 5px;
+    }
+
+    .fc-month-view {
+        .fc-event-container {
+            .fc-event {
+                color: $sl-color-darkgrey;
+                font-size: 1rem;
+                border-color: transparent !important;
+                background-color: transparent !important;
+
+                .event-title {
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+}

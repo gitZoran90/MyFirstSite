@@ -1,0 +1,279 @@
+/**
+ * @name Components
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-section {
+    &:not(:first-child) {
+        margin-top: $sl-gutter-md;
+    }
+
+    &.sl-is-empty {
+        text-align: center;
+
+        .sl-c-icon-circle {
+            width: 9rem;
+            height: 9rem;
+            color: $sl-color-white;
+            background-color: $sl-color-blue;
+
+            .sl-c-icon {
+                width: 4rem;
+                height: 4rem;
+            }
+        }
+    }
+}
+
+.sl-c-section__header {
+    margin-bottom: $sl-gutter;
+    padding-bottom: $sl-gutter;
+    border-bottom: 1px solid $sl-color-silver;
+}
+
+.sl-c-section__header--horizontal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    > .sl-c-actions {
+        position: static;
+    }
+}
+
+.sl-c-section__title {
+    &.sl-c-section__title {
+        margin-bottom: 0;
+    }
+}
+
+
+/**
+ * =Lists
+ */
+
+.sl-c-ul--unstyled {
+    list-style: none;
+    padding-left: 0;
+}
+
+
+/**
+ * =Uplaod area
+ */
+
+.sl-c-upload-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: $sl-gutter-lg $sl-gutter-xl;
+    border: 1px dashed $sl-color-darkgrey;
+    border-radius: $sl-radius-sm;
+
+    &.sl-u-big {
+        min-height: 15rem;
+    }
+
+    .sl-c-actions--right-top {
+        top: $sl-gutter;
+        right: $sl-gutter;
+    }
+}
+
+
+/**
+ * =Actions
+ */
+
+.sl-c-actions {
+    position: absolute;
+}
+
+.sl-c-actions--right-top {
+    top: 0;
+    right: 0;
+}
+
+.sl-c-actions--pop {
+    display: none;
+}
+
+.sl-c-employee-list {
+    width: 23rem;
+    list-style-type: none;
+
+    &.sl-c-employee-list {
+        margin-bottom: 0;
+    }
+
+    > li {
+        height: 3.572rem;
+        padding: $sl-gutter;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &:nth-child(odd) {
+            background-color: $sl-color-silver;
+        }
+
+        &.sl-c-employee-header {
+            color: $sl-color-white;
+            font-weight: bold;
+            background-color: $sl-color-blue;
+        }
+    }
+}
+
+/**
+ * =Timeline
+ */
+
+.sl-c-timeline {
+    margin-bottom: $sl-gutter-lg;
+
+    .sl-c-media {
+        &:not(:first-child) {
+            margin-top: $sl-gutter-sm;
+        }
+    }
+
+    .sl-c-media__object {
+        width: 4rem;
+        color: $sl-color-grey;
+    }
+}
+
+
+/**
+ * =Shift duration
+ */
+
+.sl-c-shift-duration {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: $sl-gutter-sm;
+    text-align: center;
+    border-radius: $sl-radius-xs;
+    font-size: .75rem;
+
+    &:before,
+    &:after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        display: block;
+        content: '';
+    }
+
+    &:before {
+        right: 50%;
+        left: 0;
+        background-color: $sl-color-silver;
+        border-radius: $sl-radius-xs 0 0 $sl-radius-xs;
+    }
+
+    &:after {
+        left: 50%;
+        right: 0;
+        background-color: #A8CBD7;
+        border-radius: 0 $sl-radius-xs $sl-radius-xs 0;
+    }
+
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    > span {
+        min-width: 2.5rem;
+
+        &:last-child {
+            color: $sl-color-white;
+        }
+    }
+}
+
+
+/**
+ * =Circle loader
+ */
+
+.sl-c-circle-loader {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 4rem;
+    background-color: $sl-color-white;
+    border-radius: $sl-radius-round;
+    border: 3px solid $sl-color-white;
+
+    > svg {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      animation: colorload 2s ease-in-out;
+      background: $sl-color-white;
+
+      > circle {
+        fill: $sl-color-white;
+        stroke: $sl-color-blue;
+        stroke-width: 32;
+      }
+    }
+}
+
+
+/**
+ * =Misc. components
+ */
+
+.sl-c-company-list {
+    &.sl-has-scroll {
+        > .sl-c-panel__body {
+            overflow-y: auto;
+            max-height: 20rem;
+        }
+    }
+
+    .sl-c-btn--default {
+        background-color: #eee;
+        border-radius: $sl-radius-sm;
+
+        &.sl-is-active {
+            color: $sl-color-white;
+            background-color: $sl-color-blue;
+        }
+    }
+}
+
+.sl-c-repeat-intervals {
+    .sl-c-radio {
+        + .sl-c-control-label {
+            min-width: 4rem;
+        }
+    }
+
+    .sl-c-input-group,
+    .sl-c-form-control {
+        width: 14rem;
+    }
+}
+
+.sl-c-403-img {
+    .cls-1 { fill: #dcdcdc; }
+    .cls-2 { fill: #fafafa; }
+    .cls-3 { fill: #b6b3b1; }
+}
+
+.sl-c-avatar--company {
+  border: 2px solid #ffffff;
+  width: 40px;
+  height: 40px;
+}

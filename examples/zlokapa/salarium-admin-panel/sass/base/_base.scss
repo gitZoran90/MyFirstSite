@@ -1,0 +1,72 @@
+/**
+ * @name HTML reset
+ * @author Zoran Zlokapa
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    color: $sl-color-darkgrey;
+}
+
+h1,
+h2,
+h3 {
+    &:not(:last-child) {
+        margin-bottom: $sl-gutter-md;
+    }
+}
+
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+dl {
+    &:not(:last-child) {
+        margin-bottom: $sl-gutter;
+    }
+}
+
+a,
+area,
+button,
+[role="button"],
+input:not([type=range]),
+label,
+select,
+summary,
+textarea {
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+}
+
+a {
+    color: $sl-color-blue;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+hr {
+    margin: $sl-gutter 0;
+    width: 100%;
+}

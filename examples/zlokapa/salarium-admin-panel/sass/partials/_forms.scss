@@ -1,0 +1,406 @@
+/**
+ * @name Forms
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-form-group {
+    &:not(:first-child) {
+        margin-top: $sl-gutter;
+    }
+
+    &.sl-has-error {
+        .sl-u-help-text {
+            color: $sl-color-red;
+        }
+    }
+}
+
+.sl-c-control-label {
+    display: block;
+    vertical-align: middle;
+    margin-bottom: $sl-gutter-xs;
+
+    .sl-has-error & {
+        color: $sl-color-red;
+    }
+}
+
+.sl-c-form-control {
+    display: block;
+    width: 100%;
+    min-height: 3rem;
+    padding: $sl-gutter-sm;
+    font-family: 'sourcesanspro-regular', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
+    border: 1px solid $sl-color-darkgrey;
+    border-radius: 0;
+    background-color: $sl-color-white;
+
+    &::-webkit-input-placeholder {
+      color: $sl-color-grey;
+    }
+
+    &::-moz-placeholder {
+      color: $sl-color-grey;
+    }
+
+    &:-ms-input-placeholder {
+      color: $sl-color-grey;
+    }
+
+    &:-moz-placeholder {
+      color: $sl-color-grey;
+    }
+
+    &:focus {
+        border-color: $sl-color-blue;
+        outline: none;
+    }
+
+    &[disabled],
+    &.sl-is-disabled {
+        border-color: $sl-color-lightgrey;
+        background-color: $sl-color-lightergrey;
+        cursor: not-allowed;
+
+        + .sl-c-input-group__addon {
+            border-color: $sl-color-lightgrey;
+            background-color: $sl-color-lightergrey;
+            cursor: not-allowed;
+        }
+    }
+
+    .sl-has-error & {
+        border-color: $sl-color-red;
+    }
+}
+
+select {
+    &.sl-c-form-control {
+        height: 3rem;
+    }
+
+    &.sl-c-form-control--md {
+        height: 2.5rem;
+    }
+}
+
+.sl-c-form-control,
+.sl-c-input-group {
+    + .sl-u-help-text {
+        margin-top: $sl-gutter-xs;
+    }
+}
+
+.sl-c-form-control--md {
+    min-height: 2.5rem;
+    padding: $sl-gutter-xs;
+}
+
+label {
+    &.sl-c-btn {
+        > input[type=checkbox] {
+            position: absolute;
+            clip: rect(0, 0, 0, 0);
+            pointer-events: none;
+        }
+    }
+}
+
+.sl-c-radio,
+.sl-c-check {
+    display: none;
+    visibility: hidden;
+    vertical-align: middle;
+
+    + .sl-c-control-label {
+        position: relative;
+        display: inline-block;
+        margin-right: $sl-gutter;
+
+        &:before {
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            width: 1rem;
+            height: 1rem;
+            margin-right: $sl-gutter-sm;
+            margin-top: -$sl-gutter-sm;
+            border: 1px solid $sl-color-darkgrey;
+            background-color: $sl-color-white;
+            content: '';
+        }
+    }
+
+    &:hover,
+    &:focus {
+        + .sl-c-control-label {
+            &:before {
+                border-color: $sl-color-blue;
+            }
+        }
+    }
+
+    &[disabled],
+    &.sl-is-disabled {
+        + .sl-c-control-label {
+            color: $sl-color-lightgrey;
+            cursor: not-allowed;
+
+            &:before {
+                border-color: $sl-color-lightgrey;
+            }
+        }
+    }
+}
+
+.sl-c-radio {
+    + .sl-c-control-label {
+        &:before {
+            border-radius: $sl-radius-round;
+        }
+    }
+
+    &:checked {
+        + .sl-c-control-label {
+            &:before {
+                border-color: $sl-color-darkgrey;
+                box-shadow: inset 0 0 0 2px $sl-color-white;
+                background-color: $sl-color-blue;
+            }
+        }
+    }
+}
+
+.sl-c-check {
+    &:checked {
+        + .sl-c-control-label {
+            &:before {
+                border-color: $sl-color-darkgrey;
+            }
+
+            &:after {
+                position: absolute;
+                top: .55rem;
+                left: .15rem;
+                transform: rotate(-45deg);
+                display: inline-block;
+                vertical-align: middle;
+                width: .8rem;
+                height: .3rem;
+                border-left: 2px solid $sl-color-blue;
+                border-bottom: 2px solid $sl-color-blue;
+                content: '';
+            }
+        }
+    }
+}
+
+.sl-c-toggle-btn {
+    position: relative;
+    display: inline-block;
+    height: .6rem;
+    width: 2rem;
+    background: $sl-color-grey;
+    border-radius: 100px;
+    cursor: pointer;
+    vertical-align: -0.15rem;
+    transition: all .3s ease;
+
+    &:after  {
+        position: absolute;
+        left: -2px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
+        border-radius: $sl-radius-round;
+        background: $sl-color-blue;
+        box-shadow: 0px 3px 3px rgba($sl-color-darkgrey, .05);
+        content: '';
+        transition: all .3s ease;
+    }
+
+    + .sl-c-control-label {
+        display: inline-block;
+        margin-bottom: 0;
+    }
+}
+
+.sl-c-toggle {
+    display: none;
+
+    &:checked ~ label {
+        background: $sl-color-grey;
+
+        &:after {
+            left: 1rem;
+            background: $sl-color-darkblue;
+        }
+
+        &.sl-c-control-label {
+            background-color: transparent;
+        }
+    }
+
+    &:disabled ~ label,
+    &.sl-is-disabled ~ label {
+        color: $sl-color-grey;
+        pointer-events: none;
+
+        &:after {
+            background: $sl-color-silver;
+        }
+    }
+}
+
+.sl-c-input-group {
+    display: flex;
+    align-items: stretch;
+
+    > .sl-c-form-control {
+        flex-grow: 1;
+
+        &:first-child {
+            border-right: none;
+        }
+
+        &:last-child {
+            border-left: none;
+        }
+
+        &:focus {
+            + .sl-c-input-group__addon {
+                border-color: $sl-color-blue;
+
+                .sl-has-error & {
+                    border-color: $sl-color-red;
+                }
+            }
+        }
+    }
+}
+
+.sl-c-input-group__addon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 3rem;
+    font-size: 1rem;
+    border: 1px solid $sl-color-darkgrey;
+
+    &:first-child {
+        border-right: none;
+
+        > .sl-c-icon {
+            margin-left: $sl-gutter;
+        }
+    }
+
+    &:last-child {
+        border-left: none;
+
+        > .sl-c-icon {
+            margin-right: $sl-gutter;
+        }
+    }
+
+    .sl-has-error & {
+        border-color: $sl-color-red;
+
+        .sl-c-icon {
+            color: $sl-color-red;
+        }
+    }
+}
+
+.sl-c-input-group--rounded {
+    > .sl-c-form-control {
+        &:first-child {
+            border-top-left-radius: $sl-radius-lg;
+            border-bottom-left-radius: $sl-radius-lg;
+        }
+
+        &:last-child {
+            border-top-right-radius: $sl-radius-lg;
+            border-bottom-right-radius: $sl-radius-lg;
+        }
+    }
+
+    .sl-c-input-group__addon {
+        &:first-child {
+            border-top-left-radius: $sl-radius-lg;
+            border-bottom-left-radius: $sl-radius-lg;
+        }
+    
+        &:last-child {
+            border-top-right-radius: $sl-radius-lg;
+            border-bottom-right-radius: $sl-radius-lg;
+        }
+    }
+}
+
+.sl-c-form-control--inline {
+    display: inline-block;
+    width: auto;
+
+    &.sl-c-input-group {
+        display: inline-flex;
+    }
+}
+
+.sl-c-form__footer {
+    margin-top: $sl-gutter;
+    padding: $sl-gutter 0;
+    background-color: $sl-color-silver;
+
+    > .sl-u-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sl-c-form-group {
+        margin-top: 0;
+
+        &:only-child {
+            flex-grow: 1;
+        }
+    }
+}
+
+.sl-c-form__actions {
+    display: flex;
+    width: 100%;
+
+    .sl-c-btn {
+        padding-right: $sl-gutter-sm;
+        padding-left: $sl-gutter-sm;
+        flex-grow: 1;
+    }
+}
+
+.sl-c-filter-options {
+    display: flex;
+    align-items: center;
+    
+    .sl-c-form-control,
+    .sl-c-input-group__addon {
+        min-height: 2.715rem;
+    }
+}
+
+.sl-c-form--username {
+    padding-top: 2.5rem;
+}
+
+.sl-c-search-form {
+    &.sl-c-search-form {
+        margin-top: 0;
+    }
+
+    .sl-c-form-control {
+        min-width: 12rem;
+    }
+}

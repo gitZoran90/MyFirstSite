@@ -1,0 +1,15 @@
+/**
+ * @name Shifts pages specific styles
+ * @author Zoran Zlokapa
+ */
+
+@import
+    "../helpers/variables",
+    "../helpers/mixins"
+;
+
+.sl-l-shifts {
+    .sl-u-container {
+        width: 100%;
+    }
+}

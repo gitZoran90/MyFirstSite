@@ -1,0 +1,221 @@
+/**
+ * @name Tables
+ * @author Zoran Zlokapa
+ */
+
+.sl-c-table-wrap {
+    overflow-x: auto;
+}
+
+.sl-c-table {
+    width: 100%;
+    margin-bottom: $sl-gutter;
+    border-collapse: collapse;
+
+    > thead {
+        > tr {
+            color: $sl-color-white;
+
+            > th,
+            > td {
+                height: 4.5rem;
+                padding: $sl-gutter;
+                white-space: nowrap;
+                text-align: left;
+                background-color: $sl-color-blue;
+
+                &.sl-u-text--center {
+                    text-align: center;
+                }
+
+                &.sl-u-text--right {
+                    text-align: right;
+                }
+
+                &.sl-is-narrow {
+                    width: 1.5rem;
+                }
+
+                &.sl-is-wide {
+                    min-width: 500px;
+                }
+            }
+
+            &.sl-has-error {
+                > th,
+                > td {
+                    color: $sl-color-white;
+                    background-color: $sl-color-red;
+                }
+            }
+
+            &.sl-c-alert {
+                padding-right: 0;
+
+                > th,
+                > td {
+                    height: auto;
+                    text-align: center;
+                }
+            }
+
+            &.sl-c-alert--info {
+                > th,
+                > td {
+                    color: $sl-color-darkgrey;
+                    background-color: $sl-color-lightblue;
+                }
+            }
+
+            &.sl-c-alert--danger,
+            &.sl-c-alert--warning,
+            &.sl-c-alert--error {
+                > th,
+                > td {
+                    color: $sl-color-white;
+                    background-color: $sl-color-red;
+                }
+            }
+
+            .sl-c-check,
+            .sl-c-radio {
+                + .sl-c-control-label {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    > tbody {
+        > tr {
+            border-left: 2px solid transparent;
+
+            &:nth-child(even) {
+                background-color: $sl-color-lightsilver;
+            }
+
+            &.sl-is-selected {
+                border-left-color: $sl-color-blue;
+                background-color: transparentize($sl-color-green, .85);
+            }
+
+            &.sl-has-error {
+                color: $sl-color-white;
+                background-color: $sl-color-red;
+            }
+
+            > td {
+                min-width: 7rem;
+                height: 4.5rem;
+                padding: $sl-gutter;
+            }
+        }
+
+        .sl-c-check {
+            + .sl-c-control-label {
+                margin-right: 2rem;
+            }
+        }
+    }
+
+    .sl-u-indent-1 {
+        td {
+            &:first-child {
+                .sl-c-check {
+                    + .sl-c-control-label {
+                        margin-left: 4rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .sl-u-indent-2 {
+        td {
+            &:first-child {
+                .sl-c-check {
+                    + .sl-c-control-label {
+                        margin-left: 8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sl-c-table-header,
+.sl-c-table-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: $sl-gutter;
+}
+
+.sl-c-table-header {
+    h1, h2, h3, h4, h5, h6 {
+        margin-bottom: 0;
+    }
+
+    &.sl-is-flex-left {
+        justify-content: flex-start;
+
+        .sl-u-actions {
+            flex-grow: 1;
+            text-align: right;
+        }
+    }
+}
+
+.sl-c-table-options {
+    margin-top: $sl-gutter-sm;
+    margin-bottom: $sl-gutter-lg;
+}
+
+.sl-c-table__sortable {
+    cursor: pointer;
+}
+
+.sl-c-schedule-table {
+    > thead {
+        .sl-is-empty {
+            background-color: transparent;
+        }
+    }
+
+    > tbody {
+        > tr {
+            border-bottom: 1px solid $sl-color-white;
+
+            &:nth-child(even) {
+                background-color: transparent;
+            }
+
+            &.sl-has-error {
+                background-color: transparent;
+                border: 1px solid $sl-color-red;
+
+                > td {
+                    color: $sl-color-red;
+                    border-top: 1px solid $sl-color-red;
+                }
+
+                .sl-is-highlighted {
+                    color: $sl-color-white;
+                    background-color: $sl-color-red;
+                }
+            }
+
+            > td {
+                height: 5.1rem;
+            }
+        }
+
+        .sl-is-highlighted {
+            background-color: $sl-color-lightblue;
+
+            .sl-has-error & {
+                background-color: $sl-color-red;
+            }
+        }
+    }
+}
