@@ -1,0 +1,244 @@
+@import 'helpers/variables';
+@import 'scss/base/typography';
+
+html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.section {
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+.phones {
+    position: relative;
+}
+    .phone {
+        position: relative;
+        max-width: 80%;
+        margin: 3rem auto -12rem;
+    }
+
+    .phone + .phone {
+    display: none;
+    }
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
+}
+
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box; 
+}
+
+@media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0; }
+  }
+
+@media (min-width: 550px) { 
+    .section {
+      padding: 12rem 0 11rem;
+    }
+    
+    .hero {
+      padding-bottom: 12rem;
+      text-align: left;
+      height: 165px;
+    }
+    
+    .phone {
+      position: absolute;
+      top: -7rem;
+      right: 3rem;
+      max-height: 362px;
+      z-index: 3;
+    }
+    
+    .phone + .phone {
+      top: -6rem;
+      display: block;
+      max-width: 73.8%;
+      right: 0;
+      z-index: 2;
+      max-height: 338px;
+    }
+    
+    .hero-heading {
+      font-size: 2.4rem;
+    }
+}
+  
+@media (min-width: 750px) {
+    .hero {
+      height: 190px;
+    }
+    
+    .hero-heading {
+      font-size: 2.6rem;
+    }
+    
+    .section {
+      padding: 14rem 0 15rem;
+    }
+    
+    .hero {
+      padding: 16rem 0 14rem;
+    }
+    
+    .section-description {
+      max-width: 60%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .phone {
+      top: -14rem;
+      right: 5rem;
+      max-height: 510px;
+    }
+    
+    .phone + .phone {
+      top: -12rem;
+      max-height: 472px;
+    }
+    
+    .categories {
+      padding: 15rem 0 8rem;
+    }
+  }
+  
+@media (min-width: 1000px) {   
+    .section {
+      padding: 20rem 0 19rem;
+    }
+    
+    .hero {
+      padding: 22rem 0;
+    }
+    
+    .hero-heading {
+      font-size: 3.0rem;
+    }
+    
+    .phone {
+      top: -16rem;
+      max-height: 615px;
+    }
+    
+    .phone + .phone {
+      top: -14rem;
+      max-height: 570px;
+    }
+}
+
+@media (min-width: 400px) {
+    .container {
+      width: 85%;
+      padding: 0; }
+  }
+  
+@media (min-width: 550px) {
+    .container {
+      width: 80%; 
+    }
+    .column,
+    .columns {
+      margin-left: 4%; 
+    }
+    .column:first-child,
+    .columns:first-child {
+      margin-left: 0; }
+}
+  
+.one.column,
+.one.columns {
+    width: 4.66666666667%;
+}
+.two.columns {
+    width: 13.3333333333%;
+}
+
+.three.columns {
+    width: 22%;
+}
+
+.four.columns {
+    width: 30.6666666667%;
+}
+
+.five.columns {
+    width: 39.3333333333%;
+}
+
+.six.columns {width: 48%;            
+}
+
+.seven.columns { 
+    width: 56.6666666667%; 
+}
+
+.eight.columns { 
+    width: 65.3333333333%; 
+}
+
+.nine.columns { 
+    width: 74.0%;          
+}
+
+.ten.columns { 
+    width: 82.6666666667%; 
+}
+
+.eleven.columns { 
+    width: 91.3333333333%; 
+}
+
+.twelve.columns {
+    width: 100%; margin-left: 0; 
+}
+
+.one-third.column { 
+    width: 30.6666666667%; 
+}
+
+.two-thirds.column { 
+    width: 65.3333333333%; 
+}
+  
+.one-half.column {
+    width: 48%;
+}
+
+.container:after,
+.row:after,
+.u-cf {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+
+
+
+
