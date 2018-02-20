@@ -1,10 +1,13 @@
 /* Colors */
 
 $sk-color-black: #222;
-$sk-color-blue: #0FA0CE; 
-$sk-color-lightblue: #1EAEDB; 
-
-
+$sk-color-blue: #0fa0ce;
+$sk-color-lightblue: #1eaedb;
+$sk-color-grey: #555;
+$sk-color-lightblue: lighten($sk-color-lightblue, 10%);
+$sk-color-lightblack: #333;
+$sk-color-lightgrey: #888;
+$sk-color-white: #fff;
 
 /* Screens */
 
