@@ -1,0 +1,134 @@
+@import 'helpers/variables';
+@import 'base/typography';
+@import 'base/base';
+@import 'partials/grids';
+@import 'partials/buttons';
+
+.button {
+    border-radius: 100px;
+}
+
+.section {
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+
+.section-heading,
+.section-description {
+    margin-bottom: 1.2rem;
+}
+
+.phones {
+    position: relative;
+}
+
+.phone {
+    margin: 3rem auto -12rem;
+    max-width: 80%;
+    position: relative;
+}
+
+.phone + .phone {
+    display: none;
+}
+
+@media (min-width: 550px) {
+    .section {
+        padding: 12rem 0 11rem;
+    }
+
+    .hero {
+        height: 165px;
+        padding-bottom: 12rem;
+        text-align: left;
+    }
+
+    .phone {
+        max-height: 362px;
+        position: absolute;
+        right: 3rem;
+        top: -7rem;
+        z-index: 3;
+    }
+
+    .phone + .phone {
+        display: block;
+        max-height: 338px;
+        max-width: 73.8%;
+        right: 0;
+        top: -6rem;
+        z-index: 2;
+    }
+
+    .hero-heading {
+        font-size: 2.4rem;
+    }
+}
+
+@media (min-width: 750px) {
+    .hero {
+        height: 190px;
+        padding: 16rem 0 14rem;
+    }
+
+    .hero-heading {
+        font-size: 2.6rem;
+    }
+
+    .section {
+        padding: 14rem 0 15rem;
+    }
+
+    .section-description {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 60%;
+    }
+
+    .phone {
+        max-height: 510px;
+        right: 5rem;
+        top: -14rem;
+    }
+
+    .phone + .phone {
+        max-height: 472px;
+        top: -12rem;
+    }
+
+    .categories {
+        padding: 15rem 0 8rem;
+    }
+}
+
+@media (min-width: 1000px) {
+    .section {
+        padding: 20rem 0 19rem;
+    }
+
+    .hero {
+        padding: 22rem 0;
+    }
+
+    .hero-heading {
+        font-size: 3rem;
+    }
+
+    .phone {
+        max-height: 615px;
+        top: -16rem;
+    }
+
+    .phone + .phone {
+        max-height: 570px;
+        top: -14rem;
+    }
+}
+
+.row ::after,
+.container ::after,
+.u-cf {
+    clear: both;
+    content: "";
+    display: table;
+}

@@ -282,7 +282,7 @@ a {
             background: $fr-orange;
             border-radius: 1.64rem;
             font-size: 0.8rem;
-            height: 33px;
+            height: calc(100vw * (9 / 16));
             left: 66rem;
             padding: 0.92rem 0 0;
             width: 46px;
