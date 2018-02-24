@@ -53,6 +53,10 @@
     opacity: 0.8;
 }
 
+.get-help {
+    border-bottom: 1px solid $sk-color-darkenwhite;
+}
+
 @media (min-width: 550px) {
     .section {
         padding: 12rem 0 11rem;
