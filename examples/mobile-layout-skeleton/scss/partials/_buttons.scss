@@ -3,16 +3,16 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    background-color: $sk-color-blue;
+    background-color: transparent;
     border: 1px solid #bbb;
     border-radius: 4px;
     box-sizing: border-box;
-    color: $sk-color-grey;
     cursor: pointer;
     display: inline-block;
+    height: 38px;
+    color: #555;
     font-size: 11px;
     font-weight: 600;
-    height: 38px;
     letter-spacing: 0.1rem;
     line-height: 38px;
     padding: 0 30px;
@@ -20,11 +20,6 @@ input[type="button"] {
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
-}
-
-button {
-    overflow: visible;
-    text-transform: none;
 }
 
 .button:hover,
@@ -37,8 +32,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-    border-color: $sk-color-lightgrey;
-    color: $sk-color-lightblack;
+    color: #333;
+    border-color: #888;
     outline: 0;
 }
 
@@ -47,9 +42,9 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-    background-color: $sk-color-lightblue;
-    border-color: $sk-color-lightblue;
-    color: $sk-color-white;
+    color: #FFF;
+    background-color: #33C3F0;
+    border-color: #33C3F0;
 }
 
 .button.button-primary:hover,
@@ -62,36 +57,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: $sk-color-lightblue;
-    border-color: $sk-color-lightblue;
-    color: $sk-color-white;
-}
-
-button:hover,
-.button:hover {
-    margin-bottom: 1rem;
-}
-
-.button:hover {
-    color: $sk-color-lightblue;
-    margin: 0;
-}
-
-button:hover,
-html:hover input[type="button"],
-input:hover[type="reset"],
-input:hover[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
-}
-
-button[disabled],
-html input[disabled] {
-    cursor: default;
-}
-
-button:hover:-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
+    color: #FFF;
+    background-color: #1EAEDB;
+    border-color: #1EAEDB;
 }
