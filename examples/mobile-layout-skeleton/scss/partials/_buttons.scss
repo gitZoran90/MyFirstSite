@@ -3,7 +3,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-    background-color: $sk-color-blue;
+    background-color: transparent;
     border: 1px solid #bbb;
     border-radius: 4px;
     box-sizing: border-box;
@@ -20,11 +20,6 @@ input[type="button"] {
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
-}
-
-button {
-    overflow: visible;
-    text-transform: none;
 }
 
 .button:hover,
@@ -62,36 +57,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-    background-color: $sk-color-lightblue;
-    border-color: $sk-color-lightblue;
+    background-color: $sk-color-blue;
+    border-color: $sk-color-blue;
     color: $sk-color-white;
-}
-
-button:hover,
-.button:hover {
-    margin-bottom: 1rem;
-}
-
-.button:hover {
-    color: $sk-color-lightblue;
-    margin: 0;
-}
-
-button:hover,
-html:hover input[type="button"],
-input:hover[type="reset"],
-input:hover[type="submit"] {
-    -webkit-appearance: button;
-    cursor: pointer;
-}
-
-button[disabled],
-html input[disabled] {
-    cursor: default;
-}
-
-button:hover:-moz-focus-inner,
-input::-moz-focus-inner {
-    border: 0;
-    padding: 0;
 }

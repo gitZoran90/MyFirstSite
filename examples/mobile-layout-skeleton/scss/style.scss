@@ -32,6 +32,27 @@
     display: none;
 }
 
+.values {
+    background-image: url(http://getskeleton.com/examples/landing/images/values-bg.jpg);
+    background-size: cover;
+    color: $sk-color-white;
+    padding-bottom: 5rem;
+}
+
+.value-multiplier {
+    color: $sk-color-lightblue;
+    margin-bottom: 0.5rem;
+}
+
+.value-heading {
+    margin-bottom: 0.3rem;
+}
+
+.value-description {
+    font-weight: 300;
+    opacity: 0.8;
+}
+
 @media (min-width: 550px) {
     .section {
         padding: 12rem 0 11rem;
@@ -125,8 +146,8 @@
     }
 }
 
-.row ::after,
-.container ::after,
+.container:after,
+.row:after,
 .u-cf {
     clear: both;
     content: "";
