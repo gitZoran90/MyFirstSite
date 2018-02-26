@@ -57,6 +57,21 @@
     border-bottom: 1px solid $sk-color-darkenwhite;
 }
 
+.categories {
+    background-image: url(http://getskeleton.com/examples/landing/images/values-bg.jpg);
+    background-size: cover;
+    color: $sk-color-white;
+}
+
+.section-description {
+    margin-bottom: 4rem;
+}
+
+.u-max-full-width {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
 @media (min-width: 550px) {
     .section {
         padding: 12rem 0 11rem;
