@@ -1,0 +1,124 @@
+@import 'src/scss/variables';
+
+.menu {
+    background: $ca-color-darkblue;
+}
+
+.menu__trigger {
+    background: $ca-color-whiteblue;
+    color: $ca-color-white;
+    float: left;
+    font-size: 1.5rem;
+    padding: 1.3rem 0;
+    text-align: center;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    width: 10%;
+}
+
+@media (min-width: 30em) and (max-width: 40em) {
+    .menu__trigger {
+        width: 15%;
+    }
+}
+
+@media (max-width: 30em) {
+    .menu__trigger {
+        width: 15%;
+    }
+}
+
+.menu__trigger--active {
+    background: $ca-color-salmon;
+}
+
+.menu__row {
+    font-size: 0;
+    width: 90%;
+}
+
+.menu__list {
+    display: inline-block;
+    font-size: 1.2rem;
+    vertical-align: bottom;
+}
+
+.menu__link {
+    color: $ca-color-white;
+    display: block;
+    font-weight: 500;
+    padding: 1.5rem;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+@media (max-width: 30em) {
+    .menu__link {
+        padding: 1.5rem 0.6rem;
+    }
+}
+
+.menu__link:hover {
+    background: $ca-color-whiteblue;
+}
+
+.menu__dropdown {
+    background: $ca-color-salmon;
+    display: none;
+    padding: 1.6rem 0;
+}
+
+.menu__col {
+    float: left;
+    padding: 2.5rem 1.5rem;
+    width: 33.333%;
+}
+
+@media (min-width: 40em) and (max-width: 50em) {
+    .menu__col {
+        width: 100%;
+    }
+}
+
+@media (min-width: 30em) and (max-width: 40em) {
+    .menu__col {
+        width: 100%;
+    }
+}
+
+@media (max-width: 30em) {
+    .menu__col {
+        width: 100%;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Raleway";
+}
+
+.cf :after{
+    clear: both;
+    content: "";
+    display: table;
+}
+
+h2 {
+    color: $ca-color-white;
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 2vh;
+}
+
+p {
+    color: $ca-color-white;
+    font-weight: 500;
+    line-height: 1.5;
+}
