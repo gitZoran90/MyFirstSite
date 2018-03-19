@@ -1,16 +1,16 @@
 .menu {
-  background: #0B2027; }
+  background: #0b2027; }
 
 .menu__trigger {
   background: #16414f;
+  color: #fff;
   float: left;
-  padding: 1.3rem 0;
-  width: 10%;
-  text-align: center;
-  color: #ffffff;
   font-size: 1.5rem;
-  -webkit-transition: .3s;
-  transition: .3s; }
+  padding: 1.3rem 0;
+  text-align: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  width: 10%; }
 
 @media (min-width: 30em) and (max-width: 40em) {
   .menu__trigger {
@@ -24,22 +24,22 @@
   background: #fa8072; }
 
 .menu__row {
-  width: 90%;
-  font-size: 0; }
+  font-size: 0;
+  width: 90%; }
 
 .menu__list {
   display: inline-block;
-  vertical-align: bottom;
-  font-size: 1.2rem; }
+  font-size: 1.2rem;
+  vertical-align: bottom; }
 
 .menu__link {
+  color: #fff;
   display: block;
-  text-decoration: none;
-  padding: 1.5rem;
-  color: #ffffff;
   font-weight: 500;
-  -webkit-transition: .3s;
-  transition: .3s; }
+  padding: 1.5rem;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
 
 @media (max-width: 30em) {
   .menu__link {
@@ -49,14 +49,14 @@
   background: #16414f; }
 
 .menu__dropdown {
-  padding: 1.6rem 0;
   background: #fa8072;
-  display: none; }
+  display: none;
+  padding: 1.6rem 0; }
 
 .menu__col {
-  width: 33.333%;
   float: left;
-  padding: 2.5rem 1.5rem; }
+  padding: 2.5rem 1.5rem;
+  width: 33.333%; }
 
 @media (min-width: 40em) and (max-width: 50em) {
   .menu__col {
@@ -71,26 +71,26 @@
     width: 100%; } }
 
 * {
+  box-sizing: border-box;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+  padding: 0; }
 
 body {
   font-family: "Raleway"; }
 
-.cf:after {
+.cf :after {
+  clear: both;
   content: "";
-  display: table;
-  clear: both; }
+  display: table; }
 
 h2 {
-  color: #ffffff;
+  color: #fff;
   font-size: 1.7rem;
   font-weight: 500;
   line-height: 1.4;
   margin-bottom: 2vh; }
 
 p {
-  line-height: 1.5;
-  color: #ffffff;
-  font-weight: 500; }
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5; }
