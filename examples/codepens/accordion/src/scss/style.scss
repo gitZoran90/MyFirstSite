@@ -1,0 +1,45 @@
+@import 'src/scss/variables';
+
+.accordion {
+    background: $ac-color-darkwhite;
+    font-family: "Raleway", sans-serif;
+    margin: 4rem auto;
+    max-width: 600px;
+    width: 90%;
+}
+
+.accordion__item {
+    margin-top: -11.5px;
+}
+
+.accordion__title {
+    background: $ac-color-blue;
+    color: $ac-color-white;
+    cursor: pointer;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    padding: 1rem 1.5rem;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.accordion__title:hover {
+    background: $ac-color-darkblue;
+}
+
+.accordion__copy {
+    color: $ac-color-gray;
+    display: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 1rem 1.5rem 2rem;
+}
+
+.accordion__copy--open {
+    display: block;
+}
+
+body {
+    background: $ac-color-lightdark;
+}
