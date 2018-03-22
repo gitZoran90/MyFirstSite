@@ -1,0 +1,29 @@
+@import 'src/scss/variables';
+
+input.switch {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    background-color: $cb-color-white;
+    border: 1px solid $cb-color-grey;
+    border-radius: 10px;
+    box-shadow: inset -20px 0 0 1px $cb-color-grey;
+    height: 20px;
+    outline: none;
+    position: relative;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    width: 40px;
+}
+
+input.switch:checked {
+    border: 1px solid $cb-color-blue;
+    box-shadow: inset 20px 0 0 1px $cb-color-blue;
+}
+
+input.switch ::-ms-check {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha;
+    (opacity=0)
+    opacity: 0;
+}
